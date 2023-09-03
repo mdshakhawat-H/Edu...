@@ -16,31 +16,7 @@ nav{
             gap: 10px;
             li{
                 a{
-                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
-                    border-top-left-radius: 10px;
-                    border-bottom-right-radius: 10px;
-                    position: relative;
-                    z-index: 1;
-                    transition: .4s;
-                    &::after{
-                        content: '';
-                        height: 100%;
-                        width: 0%;
-                        background-color: $secondery_color;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        border-top-left-radius: 10px;
-                        border-bottom-right-radius: 10px;
-                        z-index: -1;
-                        transition: .4s;
-                    }
-                    &:hover{
-                        color: $primary_color;
-                    }
-                    &:hover::after{
-                        width: 100%;
-                    }
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $wth: 0% , $bg: transparent );
                 }
             }
             .dropdown{
@@ -62,32 +38,7 @@ nav{
                     li{
                         display: inline;
                         a{
-                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
-                            border-top-left-radius: 10px;
-                            border-bottom-right-radius: 10px;
-                            padding: 5px 15px 5px 30px;
-                            width: 100%;
-                            background-color: $primary_color;
-                            position: relative;
-                            z-index: 1;
-                            &::after{
-                                content: '';
-                                height: 100%;
-                                width: 3%;
-                                background-color: $secondery_color;
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                border-top-left-radius: 10px;
-                                border-bottom-right-radius: 10px;
-                                z-index: -1;
-                            }
-                            &:hover{
-                                color: $primary_color;
-                            }
-                            &:hover::after{
-                                width: 100%;
-                            }
+                            @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $wth: 3%);
                         }
                     }
                 }
@@ -110,32 +61,7 @@ nav{
         }
         .log_sign{
             a{
-                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
-                border-top-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                padding: 10px;
-                position: relative;
-                z-index: 1;
-                transition: .4s;
-                &::after{
-                    content: '';
-                    height: 100%;
-                    width: 0%;
-                    background-color: $secondery_color;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    border-top-left-radius: 10px;
-                    border-bottom-right-radius: 10px;
-                    z-index: -1;
-                    transition: .4s;
-                }
-                &:hover{
-                    color: $primary_color;
-                }
-                &:hover::after{
-                    width: 100%;
-                }
+                @include btnani ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $wth: 0% , $bg: transparent , $ptb: 5px , $plr: 12px  );
             }
         }
     }

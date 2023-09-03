@@ -1,0 +1,120 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#welcome{
+    padding: 100px 0;
+    position: relative;
+    .dottedbg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 5%;
+    }
+    .welcome{
+        display: flex;
+        gap: 50px;
+        .welcome_txt{
+            width: 60%;
+            h2{
+               @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+               text-transform: capitalize;
+               padding-bottom: 10px;
+               position: relative;
+               &::after{
+                content: '';
+                width: 50%;
+                height: 3px;
+                background-color: $third_color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+               }
+            }
+            p{
+                @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                padding: 30px 0;
+            }
+            .main_accordion{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 40px;
+                --bs-accordion-border-color: transparent;
+                --bs-accordion-btn-focus-box-shadow: none;
+                .sub_accordion{
+                    border: 3px solid $secondery_color;
+                    .accordion_head{
+                        .accordion_btn{
+                            @include discription ($ff: $secondery_font , $fw: 700 , $fs: 22px , $clr: $secondery_color);
+                            text-transform: capitalize;
+                        }
+                        .accordion_btn:focus{
+                            border-color: transparent;
+                        }
+                        .accordion_btn:not(.collapsed){
+                            background-color: $third_color;
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+        .welcome_counter{
+            width: 40%;
+            h2{
+                @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+                text-transform: capitalize;
+                text-align: right;
+                padding-bottom: 10px;
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 40%;
+                    height: 3px;
+                    background-color: $third_color;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .main_welc_counter{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 70px;
+                .counter_list{
+                    display: flex;
+                    gap: 30px;
+                    .counter_item{
+                        border: 4px solid $secondery_color;
+                        padding: 10px;
+                        width: 50%;
+                        transition: .4s;
+                        &:hover{
+                            border-color: $third_color;
+                        }
+                        &:hover h3{
+                            color: $third_color;
+                        }
+                        &:hover p{
+                            color: $third_color;
+                        }
+                        h3{
+                            text-align: center;
+                            padding: 30px 0;
+                            @include head ($ff: $primary_sont , $fw: 700 , $fs: 30px , $clr: $secondery_color );
+                            transition: .4s;
+                        }
+                        p{
+                            text-transform: uppercase;
+                            text-align: center;
+                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                            transition: .4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

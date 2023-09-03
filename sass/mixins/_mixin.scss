@@ -11,3 +11,40 @@
    font-size: $fs;
    color: $clr;
 }
+@mixin btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 100% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px ){
+   font-family: $ff;
+   font-weight: $fw;
+   font-size: $fs;
+   color: $clr;
+   width: $width;
+      // padding: 5px 50px;
+      padding-top: $ptb;
+      padding-bottom: $ptb;
+      padding-left: $plr;
+      padding-right: $plr;
+      background-color: $bg;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      position: relative;
+      z-index: 1;
+      transition: .4s;
+      &::after{
+          content: '';
+          height: 100%;
+          width: $wth;
+          background-color: $secondery_color;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-top-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          z-index: -1;
+          transition: .4s;
+      }
+      &:hover{
+          color: $primary_color;
+      }
+      &:hover::after{
+          width: 100%;
+      }
+}

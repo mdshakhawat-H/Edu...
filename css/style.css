@@ -10,6 +10,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -40,14 +48,19 @@ header .main_head .Admission {
   width: 33.333%;
 }
 header .main_head .Admission a {
-  padding: 5px 50px;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: #052E59;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: relative;
   z-index: 1;
   transition: 0.4s;
@@ -118,6 +131,12 @@ nav .main_menu ul li a {
   font-weight: 400;
   font-size: 22px;
   color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: transparent;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   position: relative;
@@ -170,13 +189,17 @@ nav .main_menu ul .dropdown ul li a {
   font-weight: 400;
   font-size: 22px;
   color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 5px 15px 5px 30px;
-  width: 100%;
-  background-color: white;
   position: relative;
   z-index: 1;
+  transition: 0.4s;
 }
 nav .main_menu ul .dropdown ul li a::after {
   content: "";
@@ -189,6 +212,7 @@ nav .main_menu ul .dropdown ul li a::after {
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   z-index: -1;
+  transition: 0.4s;
 }
 nav .main_menu ul .dropdown ul li a:hover {
   color: white;
@@ -216,9 +240,14 @@ nav .main_menu .log_sign a {
   font-weight: 400;
   font-size: 22px;
   color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: transparent;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 10px;
   position: relative;
   z-index: 1;
   transition: 0.4s;
@@ -250,10 +279,11 @@ nav .main_menu .log_sign a:hover::after {
 #banner .bnrs_item .bnr_txt h1 {
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 60px;
   color: #052E59;
   width: -moz-fit-content;
   width: fit-content;
+  text-transform: capitalize;
 }
 #banner .bnrs_item .bnr_txt p {
   width: -moz-fit-content;
@@ -267,15 +297,19 @@ nav .main_menu .log_sign a:hover::after {
   background-color: #C99789;
 }
 #banner .bnrs_item .bnr_txt a {
-  padding: 5px 50px;
-  margin-bottom: 300px;
-  background-color: white;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: #052E59;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: relative;
   z-index: 1;
   transition: 0.4s;
@@ -298,4 +332,175 @@ nav .main_menu .log_sign a:hover::after {
 }
 #banner .bnrs_item .bnr_txt a:hover::after {
   width: 100%;
+}
+
+#important {
+  padding: 100px 0;
+  background-color: rgba(201, 151, 137, 0.172);
+}
+#important .important_main {
+  display: flex;
+  justify-content: space-between;
+}
+#important .important_main .important_item {
+  width: 15%;
+  background-color: #C99789;
+  border-left: 5px solid #C99789;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+#important .important_main .important_item:hover {
+  border-color: #052E59;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.15);
+}
+#important .important_main .important_item .important_icon {
+  padding: 10px;
+}
+#important .important_main .important_item .important_icon img {
+  width: 100%;
+}
+#important .important_main .important_item h2 {
+  text-align: center;
+}
+#important .important_main .important_item h2 a {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+}
+
+#welcome {
+  padding: 100px 0;
+  position: relative;
+}
+#welcome .dottedbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: 5%;
+}
+#welcome .welcome {
+  display: flex;
+  gap: 50px;
+}
+#welcome .welcome .welcome_txt {
+  width: 60%;
+}
+#welcome .welcome .welcome_txt h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  position: relative;
+}
+#welcome .welcome .welcome_txt h2::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: #C99789;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#welcome .welcome .welcome_txt p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  padding: 30px 0;
+}
+#welcome .welcome .welcome_txt .main_accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+#welcome .welcome .welcome_txt .main_accordion .sub_accordion {
+  border: 3px solid #052E59;
+}
+#welcome .welcome .welcome_txt .main_accordion .sub_accordion .accordion_head .accordion_btn {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#welcome .welcome .welcome_txt .main_accordion .sub_accordion .accordion_head .accordion_btn:focus {
+  border-color: transparent;
+}
+#welcome .welcome .welcome_txt .main_accordion .sub_accordion .accordion_head .accordion_btn:not(.collapsed) {
+  background-color: #C99789;
+  color: white;
+}
+#welcome .welcome .welcome_counter {
+  width: 40%;
+}
+#welcome .welcome .welcome_counter h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  text-transform: capitalize;
+  text-align: right;
+  padding-bottom: 10px;
+  position: relative;
+}
+#welcome .welcome .welcome_counter h2::after {
+  content: "";
+  width: 40%;
+  height: 3px;
+  background-color: #C99789;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#welcome .welcome .welcome_counter .main_welc_counter {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 70px;
+}
+#welcome .welcome .welcome_counter .main_welc_counter .counter_list {
+  display: flex;
+  gap: 30px;
+}
+#welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item {
+  border: 4px solid #052E59;
+  padding: 10px;
+  width: 50%;
+  transition: 0.4s;
+}
+#welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item:hover {
+  border-color: #C99789;
+}
+#welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item:hover h3 {
+  color: #C99789;
+}
+#welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item:hover p {
+  color: #C99789;
+}
+#welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item h3 {
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #052E59;
+  transition: 0.4s;
+}
+#welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  transition: 0.4s;
 }/*# sourceMappingURL=style.css.map */
