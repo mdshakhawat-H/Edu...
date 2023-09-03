@@ -38,3 +38,10 @@ function clearTextFunc() {
 };
 
 typeTextFunc();
+
+
+
+
+
+
+$('.wel_count').counterUp();
