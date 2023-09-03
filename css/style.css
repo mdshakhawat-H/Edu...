@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol, li, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #C99789;
+}
+header .main_head {
+  display: flex;
+  justify-content: space-between;
+}
+header .main_head .Admission {
+  width: 33.333%;
+}
+header .main_head .Admission a {
+  padding: 5px 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+header .main_head .Admission a::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+header .main_head .Admission a:hover {
+  color: white;
+}
+header .main_head .Admission a:hover::after {
+  width: 100%;
+}
+header .main_head .headline {
+  width: 33.333%;
+}
+header .main_head .headline p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+header .main_head .social {
+  width: 33.333%;
+}
+header .main_head .social ul {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+header .main_head .social ul li a {
+  font-size: 30px;
+  transition: 0.4s;
+  color: white;
+}
+header .main_head .social ul li a:hover {
+  transform: rotate(360deg) scale(1.5);
+  color: #052E59;
+}
+
+nav .navbar-brand {
+  width: 150px;
+}
+nav .navbar-brand img {
+  width: 100%;
+}
+nav .main_menu {
+  display: flex;
+  justify-content: space-between;
+}
+nav .main_menu ul {
+  width: 85%;
+  justify-content: center;
+  gap: 10px;
+}
+nav .main_menu ul li a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+nav .main_menu ul li a::after {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+nav .main_menu ul li a:hover {
+  color: white;
+}
+nav .main_menu ul li a:hover::after {
+  width: 100%;
+}
+nav .main_menu ul .dropdown {
+  position: relative;
+}
+nav .main_menu ul .dropdown ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #C99789;
+  padding: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all linear 0.4s;
+  z-index: 10;
+}
+nav .main_menu ul .dropdown ul li {
+  display: inline;
+}
+nav .main_menu ul .dropdown ul li a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px 15px 5px 30px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+nav .main_menu ul .dropdown ul li a::after {
+  content: "";
+  height: 100%;
+  width: 3%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+}
+nav .main_menu ul .dropdown ul li a:hover {
+  color: white;
+}
+nav .main_menu ul .dropdown ul li a:hover::after {
+  width: 100%;
+}
+nav .main_menu ul .dropdown:hover ul {
+  visibility: visible;
+  opacity: 1;
+  animation: updown 0.4s alternate;
+}
+@keyframes updown {
+  from {
+    top: 250%;
+    left: 0;
+  }
+  to {
+    top: 100%;
+    left: 0;
+  }
+}
+nav .main_menu .log_sign a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+nav .main_menu .log_sign a::after {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+nav .main_menu .log_sign a:hover {
+  color: white;
+}
+nav .main_menu .log_sign a:hover::after {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
