@@ -6,6 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -156,7 +160,7 @@ nav .main_menu ul .dropdown ul {
   flex-direction: column;
   gap: 10px;
   transition: all linear 0.4s;
-  z-index: 10;
+  z-index: 1;
 }
 nav .main_menu ul .dropdown ul li {
   display: inline;
@@ -236,5 +240,62 @@ nav .main_menu .log_sign a:hover {
   color: white;
 }
 nav .main_menu .log_sign a:hover::after {
+  width: 100%;
+}
+
+#banner .bnrs_item {
+  padding: 50px 0;
+  height: 750px;
+}
+#banner .bnrs_item .bnr_txt h1 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #052E59;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#banner .bnrs_item .bnr_txt p {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  margin: 50px 0;
+  padding: 10px 20px;
+  background-color: #C99789;
+}
+#banner .bnrs_item .bnr_txt a {
+  padding: 5px 50px;
+  margin-bottom: 300px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#banner .bnrs_item .bnr_txt a::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#banner .bnrs_item .bnr_txt a:hover {
+  color: white;
+}
+#banner .bnrs_item .bnr_txt a:hover::after {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */

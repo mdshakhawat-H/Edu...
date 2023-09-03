@@ -1,0 +1,51 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#banner{
+    .bnrs_item{
+        padding: 50px 0;
+        height: 750px;
+        .bnr_txt{
+            h1{
+                @include head ($ff: $primary_sont , $fw: 700 , $fs: 48px , $clr: $secondery_color );
+                width: fit-content;
+            }
+            p{
+                width: fit-content;
+                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                margin: 50px 0;
+                padding: 10px 20px;
+                background-color: $third_color;
+            }
+            a{
+                padding: 5px 50px;
+                margin-bottom: 300px;
+                background-color: $primary_color;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                position: relative;
+                z-index: 1;
+                transition: .4s;
+                &::after{
+                    content: '';
+                    height: 100%;
+                    width: 5%;
+                    background-color: $secondery_color;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    z-index: -1;
+                    transition: .4s;
+                }
+                &:hover{
+                    color: $primary_color;
+                }
+                &:hover::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
