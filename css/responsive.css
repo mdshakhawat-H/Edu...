@@ -8,13 +8,48 @@
         padding: 2px 10px;
     }
     header .main_head .social ul {
-        gap: 15px;
+        gap: 10px;
     }
     header .main_head .social ul li a {
         font-size: 12px;
     }
     header .main_head .headline p {
         font-size: 12px;
+    }
+    nav .navbar-brand img {
+	width: 60%;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    nav .main_menu ul li a {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+    nav .main_menu ul .dropdown ul {
+        top: 0%;
+        left: 100%;
+        padding: 10px;
+        gap: 5px;
+        padding: 5px;
+        z-index: 2;
+    }
+    @keyframes updown {
+        from{
+            top: 250%;
+            left: 100%;
+        }
+        to{
+            top: 0%;
+            left: 100%;
+        }
+    }
+    nav .main_menu ul .dropdown ul li a {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+    nav .main_menu {
+        display: block;
     }
  }
 @media (min-width: 576px) and (max-width: 767.98px) {  }
