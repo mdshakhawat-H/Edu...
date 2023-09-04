@@ -22,6 +22,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -602,4 +606,122 @@ nav .main_menu .log_sign a:hover::after {
 }
 #messege .main_messege .principal_messege .principal_signature .institution_nm {
   margin: 0px;
+}
+
+#recent {
+  padding: 100px 0;
+}
+#recent .recent_head {
+  text-align: center;
+}
+#recent .recent_head h2 {
+  text-transform: uppercase;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+}
+#recent .recent_head p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+#recent .recent_head p::after {
+  content: "";
+  width: 20%;
+  height: 5px;
+  background-color: #C99789;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#recent .recent_slider {
+  margin-top: 70px;
+  position: relative;
+}
+#recent .recent_slider .slick-arrow {
+  position: absolute;
+  bottom: -10%;
+  border: 3px solid #052E59;
+  padding: 5px 30px;
+  transition: 0.4s;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#recent .recent_slider .slick-arrow:hover {
+  background-color: #C99789;
+  color: white;
+}
+#recent .recent_slider .slick_left {
+  left: 45%;
+}
+#recent .recent_slider .slick_right {
+  left: 55%;
+}
+#recent .recent_slider .recent_item {
+  padding: 30px;
+  background-color: #C99789;
+  margin: 0 20px;
+}
+#recent .recent_slider .recent_item .recent_img {
+  position: relative;
+}
+#recent .recent_slider .recent_item .recent_img img {
+  width: 100%;
+  height: 300px;
+}
+#recent .recent_slider .recent_item .recent_img .recent_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 46, 89, 0.301);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: 0.4s;
+}
+#recent .recent_slider .recent_item .recent_img .recent_overlay a {
+  font-size: 30px;
+  padding: 20px 30px;
+  border-radius: 50%;
+  background-color: #C99789;
+  color: #052E59;
+  border: 3px solid #C99789;
+  transition: 0.4s;
+}
+#recent .recent_slider .recent_item .recent_img .recent_overlay a:hover {
+  color: white;
+  border-color: white;
+}
+#recent .recent_slider .recent_item .recent_img:hover .recent_overlay {
+  transform: scale(1);
+}
+#recent .recent_slider .recent_item .recent_txt {
+  padding: 30px;
+  text-align: center;
+}
+#recent .recent_slider .recent_item .recent_txt input {
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#recent .recent_slider .recent_item .recent_txt p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+  padding: 20px 0;
 }/*# sourceMappingURL=style.css.map */

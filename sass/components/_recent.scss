@@ -1,0 +1,107 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#recent{
+    padding: 100px 0;
+    .recent_head{
+        text-align: center;
+        h2{
+            text-transform: uppercase;
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+        }
+        p{
+            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+            margin-top: 20px;
+            padding-bottom: 10px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 20%;
+                height: 5px;
+                background-color: $third_color;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .recent_slider{
+        margin-top: 70px;
+        position: relative;
+        .slick-arrow{
+            position: absolute;
+            bottom: -10%;
+            border: 3px solid $secondery_color;
+            padding: 5px 30px;
+            transition: .4s;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            &:hover{
+                background-color: $third_color;
+                color: white;
+            }
+        }
+        .slick_left{
+            left: 45%;
+        }
+        .slick_right{
+            left: 55%;
+        }
+        .recent_item{
+            padding: 30px;
+            background-color: $third_color;
+            margin: 0 20px;
+            .recent_img{
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 300px;
+                }
+                .recent_overlay{
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(5, 46, 89, 0.301);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: scale(0);
+                    transition: .4s;
+                    a{
+                        font-size: 30px;
+                        padding: 20px 30px;
+                        border-radius: 50%;
+                        background-color: $third_color;
+                        color: $secondery_color;
+                        border: 3px solid $third_color;
+                        transition: .4s;
+                        &:hover{
+                            color: $primary_color;
+                            border-color: $primary_color;
+                        }
+                    }
+                }
+                &:hover .recent_overlay{
+                    transform: scale(1);
+                }
+            }
+            .recent_txt{
+                padding: 30px;
+                text-align: center;
+                input{
+                    padding: 5px;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                }
+                p{
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                    text-transform: capitalize;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}
