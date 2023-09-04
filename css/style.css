@@ -18,6 +18,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -503,4 +507,99 @@ nav .main_menu .log_sign a:hover::after {
   font-size: 22px;
   color: #052E59;
   transition: 0.4s;
+}
+
+#messege {
+  padding: 100px 0;
+  background-color: rgba(201, 151, 137, 0.172);
+}
+#messege .main_messege {
+  display: flex;
+  gap: 50px;
+}
+#messege .main_messege .principal_img {
+  width: 35%;
+}
+#messege .main_messege .principal_img img {
+  width: 100%;
+}
+#messege .main_messege .principal_img .principal_name {
+  margin: 30px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#messege .main_messege .principal_img .principal_name .prin_name {
+  letter-spacing: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #052E59;
+}
+#messege .main_messege .principal_img .principal_name p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#messege .main_messege .principal_img .principal_name p a {
+  display: block;
+  color: #052E59;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+#messege .main_messege .principal_messege {
+  width: 65%;
+}
+#messege .main_messege .principal_messege h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  padding-bottom: 10px;
+  position: relative;
+}
+#messege .main_messege .principal_messege h2::after {
+  content: "";
+  height: 5px;
+  width: 20%;
+  background-color: #052E59;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#messege .main_messege .principal_messege p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  margin-top: 40px;
+  text-align: justify;
+}
+#messege .main_messege .principal_messege p a {
+  color: #052E59;
+  font-weight: 700;
+}
+#messege .main_messege .principal_messege p span {
+  display: block;
+  margin-top: 30px;
+}
+#messege .main_messege .principal_messege .principal_signature {
+  margin-top: 60px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#messege .main_messege .principal_messege .principal_signature .prin_name {
+  display: block;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+#messege .main_messege .principal_messege .principal_signature .prin_title {
+  margin-top: 10px;
+}
+#messege .main_messege .principal_messege .principal_signature .institution_nm {
+  margin: 0px;
 }/*# sourceMappingURL=style.css.map */

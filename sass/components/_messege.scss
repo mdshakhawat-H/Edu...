@@ -1,0 +1,81 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#messege{
+    padding: 100px 0;
+    background-color: rgba(201, 151, 137, 0.172);
+    .main_messege{
+        display: flex;
+        gap: 50px;
+        .principal_img{
+            width: 35%;
+            img{
+                width: 100%;
+            }
+            .principal_name{
+                margin: 30px 0 0 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .prin_name{
+                    letter-spacing: 10px;
+                    @include discription ($ff: $secondery_font , $fw: 600 , $fs: 22px , $clr: $secondery_color);
+                }
+                p{
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                    text-transform: capitalize;
+                    a{
+                        display: block;
+                        color: $secondery_color;
+                        font-weight: 700;
+                        letter-spacing: 10px;
+                    }
+                }
+            }
+        }
+        .principal_messege{
+            width: 65%;
+            h2{
+                @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+                padding-bottom: 10px;
+                position: relative;
+                &::after{
+                    content: '';
+                    height: 5px;
+                    width: 20%;
+                    background-color: $secondery_color;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            p{
+                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                margin-top: 40px;
+                text-align: justify;
+                a{
+                    color: $secondery_color;
+                    font-weight: 700;
+                }
+                span{
+                    display: block;
+                    margin-top: 30px;
+                }
+            }
+            .principal_signature{
+                margin-top: 60px;
+                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                .prin_name{
+                    display: block;
+                    letter-spacing: 10px;
+                    font-weight: 600;
+                }
+                .prin_title {
+                    margin-top: 10px;
+                }
+                .institution_nm{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
