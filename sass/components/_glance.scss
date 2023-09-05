@@ -1,0 +1,39 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#glance{
+    padding: 100px 0;
+    .glance_head{
+        display: flex;
+        justify-content: center;
+        h2{
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+            padding-bottom: 10px;
+            position: relative;
+            width: fit-content;
+            &::after{
+                content: '';
+                width: 50%;
+                height: 4px;
+                background-color: $third_color;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .glance_txt{
+        margin-top: 50px;
+        p{
+            text-align: justify;
+            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+            .fst_line_glance{
+                margin-left: 200px;
+            }
+            .gl_txt_2{
+                display: block;
+                margin-top: 50px;
+            }
+        }
+    }
+}

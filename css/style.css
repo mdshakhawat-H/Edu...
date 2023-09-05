@@ -30,6 +30,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -852,4 +856,49 @@ nav .main_menu .log_sign a:hover::after {
   color: #C99789;
   text-transform: capitalize;
   text-align: center;
+}
+
+#glance {
+  padding: 100px 0;
+}
+#glance .glance_head {
+  display: flex;
+  justify-content: center;
+}
+#glance .glance_head h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  padding-bottom: 10px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#glance .glance_head h2::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: #C99789;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#glance .glance_txt {
+  margin-top: 50px;
+}
+#glance .glance_txt p {
+  text-align: justify;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#glance .glance_txt p .fst_line_glance {
+  margin-left: 200px;
+}
+#glance .glance_txt p .gl_txt_2 {
+  display: block;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */

@@ -62,6 +62,7 @@ arr.map((item)=>{
 // ================ WELCOME PART ENDED ===============
 // ================ RECENT PART START ===============
 $('.recent_slider').slick({
+    autoplay: true,
     dots: false,
     infinite: true,
     speed: 300,
