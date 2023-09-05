@@ -295,6 +295,10 @@
     #footer .foot_head {
         margin-top: 7px;
     }
+    #footer .foot_head h2 {
+        font-weight: 500;
+        font-size: 20px;
+    }
     #footer .foot_lst {
         margin-top: 9px;
     }
