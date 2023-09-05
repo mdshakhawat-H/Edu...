@@ -252,6 +252,64 @@
     #recent .recent_slider .slick_left {
         left: 40%;
     }
+    #footer {
+        padding: 40px 0 0;
+    }
+    #footer .foot_logo img {
+        width: 80%;
+    }
+    #footer .foot_txt p {
+        font-size: 9px;
+        padding: 10px 5px 20px 0;
+    }
+    #footer .foot_txt p span {
+        margin-left: 10px;
+    }
+    #footer .foot_txt p span i {
+        font-size: 7px;
+    }
+    #footer .foot_txt .foot_loc {
+        gap: 3px;
+        font-size: 12px;
+    }
+    #footer .foot_txt .foot_contact {
+        padding: 20px 0;
+        gap: 0px;
+    }
+    #footer .foot_txt .foot_contact li a {
+        font-size: 11px;
+        gap: 3px;
+    }
+    #footer .foot_txt h2 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    #footer .foot_txt .foot_social {
+        padding: 0px 0 15px;
+        gap: 10px;
+    }
+    #footer .foot_txt .foot_social li a {
+        font-size: 13px;
+        padding: 3px;
+    }
+    #footer .foot_head {
+        margin-top: 7px;
+    }
+    #footer .foot_lst {
+        margin-top: 9px;
+    }
+    #footer .foot_lst ul {
+        gap: 7px;
+    }
+    #footer .foot_lst ul li a {
+        font-size: 11px;
+    }
+    #footer .copyright {
+        padding: 3px 0;
+    }
+    #footer .copyright p {
+        font-size: 9px;
+    }
  }
 @media (min-width: 576px) and (max-width: 767.98px) {  }
 @media (min-width: 768px) and (max-width: 991.98px) {  }

@@ -1,0 +1,116 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#footer{
+    padding: 100px 0 0;
+    background-color: rgba(5, 46, 89, 0.17);
+    .foot_logo{
+        img{
+            width: 50%;
+        }
+    }
+    .foot_txt{
+        p{
+            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+            padding: 20px 75px 20px 0;
+            span{
+                margin-left: 20px;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+        .foot_loc{
+            display: flex;
+            gap: 10px;
+            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+            &:hover{
+                color: $third_color;
+            }
+            span {
+                i{
+                    transition: .4s;
+                }
+            }
+            &:hover span i{
+                transform: rotate(360deg);
+            }
+        }
+        .foot_contact{
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                a{
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                    display: flex;
+                    gap: 10px;
+                    &:hover{
+                        color: $third_color;
+                    }
+                    span{
+                        i{
+                            transition: .4s;
+                        }
+                    }
+                    &:hover span i{
+                        transform: rotate(360deg);
+                    }
+                    
+                }
+            }
+        }
+        .foot_social{
+            padding: 0px 0 30px;
+            display: flex;
+            gap: 30px;
+            li{
+                a{
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 26px , $clr: $secondery_color);
+                    transition: .4s;
+                    padding: 15px;
+                    &:hover{
+                        transform: rotate(360deg);
+                        background-color: rgba(201, 151, 137, 0.201);
+                    }
+                }
+            }
+        }
+        h2{
+            @include  head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+        }
+    }
+    .foot_head{
+        margin-top: 20px;
+        h2{
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+            text-transform: uppercase;
+        }
+    }
+    .foot_lst{
+        margin-top: 30px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            li{
+                a{
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                    transition: .4s;
+                    &:hover{
+                        color: $third_color;
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        padding: 10px 0;
+        background-color: $secondery_color;
+        p{
+            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $third_color);
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+}

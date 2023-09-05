@@ -16,7 +16,7 @@ nav{
             gap: 10px;
             li{
                 a{
-                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $wth: 0% , $bg: transparent );
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 20px , $clr: $secondery_color , $wth: 0% , $bg: transparent );
                 }
             }
             .dropdown{
@@ -42,7 +42,7 @@ nav{
                         }
                     }
                 }
-                &:hover ul{
+                &:hover > ul{
                     visibility: visible;
                     opacity: 1;
                     animation: updown .4s alternate;

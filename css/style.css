@@ -26,6 +26,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -137,7 +141,7 @@ nav .main_menu ul {
 nav .main_menu ul li a {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   color: #052E59;
   width: 100%;
   padding-top: 5px;
@@ -228,7 +232,7 @@ nav .main_menu ul .dropdown ul li a:hover {
 nav .main_menu ul .dropdown ul li a:hover::after {
   width: 100%;
 }
-nav .main_menu ul .dropdown:hover ul {
+nav .main_menu ul .dropdown:hover > ul {
   visibility: visible;
   opacity: 1;
   animation: updown 0.4s alternate;
@@ -673,7 +677,7 @@ nav .main_menu .log_sign a:hover::after {
 }
 #recent .recent_slider .recent_item .recent_img img {
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 #recent .recent_slider .recent_item .recent_img .recent_overlay {
   width: 100%;
@@ -724,4 +728,128 @@ nav .main_menu .log_sign a:hover::after {
   color: #052E59;
   text-transform: capitalize;
   padding: 20px 0;
+}
+
+#footer {
+  padding: 100px 0 0;
+  background-color: rgba(5, 46, 89, 0.17);
+}
+#footer .foot_logo img {
+  width: 50%;
+}
+#footer .foot_txt p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  padding: 20px 75px 20px 0;
+}
+#footer .foot_txt p span {
+  margin-left: 20px;
+}
+#footer .foot_txt p span i {
+  font-size: 20px;
+}
+#footer .foot_txt .foot_loc {
+  display: flex;
+  gap: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#footer .foot_txt .foot_loc:hover {
+  color: #C99789;
+}
+#footer .foot_txt .foot_loc span i {
+  transition: 0.4s;
+}
+#footer .foot_txt .foot_loc:hover span i {
+  transform: rotate(360deg);
+}
+#footer .foot_txt .foot_contact {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#footer .foot_txt .foot_contact li a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  display: flex;
+  gap: 10px;
+}
+#footer .foot_txt .foot_contact li a:hover {
+  color: #C99789;
+}
+#footer .foot_txt .foot_contact li a span i {
+  transition: 0.4s;
+}
+#footer .foot_txt .foot_contact li a:hover span i {
+  transform: rotate(360deg);
+}
+#footer .foot_txt .foot_social {
+  padding: 0px 0 30px;
+  display: flex;
+  gap: 30px;
+}
+#footer .foot_txt .foot_social li a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #052E59;
+  transition: 0.4s;
+  padding: 15px;
+}
+#footer .foot_txt .foot_social li a:hover {
+  transform: rotate(360deg);
+  background-color: rgba(201, 151, 137, 0.201);
+}
+#footer .foot_txt h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+}
+#footer .foot_head {
+  margin-top: 20px;
+}
+#footer .foot_head h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  text-transform: uppercase;
+}
+#footer .foot_lst {
+  margin-top: 30px;
+}
+#footer .foot_lst ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#footer .foot_lst ul li a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  transition: 0.4s;
+}
+#footer .foot_lst ul li a:hover {
+  color: #C99789;
+}
+#footer .copyright {
+  padding: 10px 0;
+  background-color: #052E59;
+}
+#footer .copyright p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #C99789;
+  text-transform: capitalize;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
