@@ -66,3 +66,22 @@ nav{
         }
     }
 }
+.menufixed{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    animation: menufixed 1s;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+}
+@keyframes menufixed {
+    from{
+        top: -200px;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}

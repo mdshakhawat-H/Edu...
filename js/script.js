@@ -1,3 +1,19 @@
+
+// ================ NAV PART START ===============
+let menufixed = document.querySelector('nav')
+window.addEventListener("scroll", function(){
+this.window.scrollY
+console.log(this.window.scrollY);
+   let scrolling = window.scrollY
+
+   if(scrolling > 150){
+       menufixed.classList.add('menufixed')
+    }
+    else{
+       menufixed.classList.remove('menufixed')
+   }
+})
+// ================ NAV PART ENDED ===============
 // ================ BANNER PART START ===============
 'use strict';
 
@@ -77,7 +93,6 @@ $('.recent_slider').slick({
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
         }
       },
       {
