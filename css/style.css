@@ -34,6 +34,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -101,13 +105,30 @@ header .main_head .Admission a:hover::after {
   width: 100%;
 }
 header .main_head .headline {
+  position: relative;
   width: 33.333%;
+  overflow: hidden;
 }
 header .main_head .headline p {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: #052E59;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 540px;
+  animation: scroll 15s linear infinite running;
+}
+@keyframes scroll {
+  from {
+    top: 20%;
+    left: 100%;
+  }
+  to {
+    top: 20%;
+    left: -150%;
+  }
 }
 header .main_head .social {
   width: 33.333%;
@@ -139,8 +160,7 @@ nav .main_menu {
 }
 nav .main_menu ul {
   width: 85%;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
 }
 nav .main_menu ul li a {
   font-family: "Exo 2", sans-serif;
@@ -322,15 +342,34 @@ nav .main_menu .log_sign a:hover::after {
   text-transform: capitalize;
 }
 #banner .bnrs_item .bnr_txt p {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 400px;
+  height: 50px;
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: #052E59;
   margin: 50px 0;
-  padding: 10px 20px;
+  padding: 0 10px;
   background-color: #C99789;
+  overflow: hidden;
+  position: relative;
+}
+#banner .bnrs_item .bnr_txt p span {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 460px;
+  animation: bnrscroll 10s linear infinite;
+}
+@keyframes bnrscroll {
+  from {
+    top: 20%;
+    left: 100%;
+  }
+  to {
+    top: 20%;
+    left: -120%;
+  }
 }
 #banner .bnrs_item .bnr_txt a {
   font-family: "Exo 2", sans-serif;
@@ -921,4 +960,334 @@ nav .main_menu .log_sign a:hover::after {
 #glance .glance_txt p .gl_txt_2 {
   display: block;
   margin-top: 50px;
+}
+
+#admission {
+  padding: 100px 0;
+}
+#admission .admission_head h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+}
+#admission .admission_head h2::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: #C99789;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#admission .admission_form {
+  margin-top: 50px;
+}
+#admission .admission_form p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#admission .admission_form p span {
+  display: block;
+  margin-top: 30px;
+}
+#admission .admission_form form {
+  padding: 10px;
+  width: 80%;
+  margin: 40px auto 0;
+  background-color: #FAD9C1;
+  border-radius: 16px;
+}
+#admission .admission_form form .form_head {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#admission .admission_form form .form_head .form_logo {
+  width: 23%;
+}
+#admission .admission_form form .form_head .form_logo img {
+  width: 100%;
+}
+#admission .admission_form form .form_head .form_head_txt {
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+}
+#admission .admission_form form .form_head .form_head_txt h3 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #052E59;
+}
+#admission .admission_form form .form_head .form_head_txt p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#admission .admission_form form .form_head .form_head_txt h4 {
+  text-transform: uppercase;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #052E59;
+}
+#admission .admission_form form .form_head .student_pic {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#admission .admission_form form .form_head .student_pic img {
+  width: 100px;
+  height: 70px;
+  border-radius: 10px;
+  border: 3px solid #052E59;
+}
+#admission .admission_form form .form_head .student_pic input {
+  width: 150px;
+  margin-top: 10px;
+  font-size: 10px;
+}
+#admission .admission_form form .main_form {
+  margin-top: 20px;
+  position: relative;
+}
+#admission .admission_form form .main_form::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#admission .admission_form form .main_form .student_name {
+  padding: 30px 20px 0;
+  display: flex;
+  gap: 30px;
+}
+#admission .admission_form form .main_form .student_name .sname_box {
+  width: 50%;
+  position: relative;
+}
+#admission .admission_form form .main_form .student_name .sname_box input {
+  padding: 10px;
+  border: 2px solid #052E59;
+  width: 100%;
+  background-color: transparent;
+}
+#admission .admission_form form .main_form .student_name .sname_box label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #651E3E;
+  background-color: #FAD9C1;
+  text-transform: capitalize;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  transition: 0.4s;
+}
+#admission .admission_form form .main_form .student_name .sname_box input:focus ~ label, #admission .admission_form form .main_form .student_name .sname_box input:valid ~ label {
+  top: -15px;
+  left: 25px;
+  color: #052E59;
+  font-size: 18px;
+  background-color: #FAD9C1;
+  padding: 0 5px;
+}
+#admission .admission_form form .main_form .student_name .course_name_box {
+  width: 30%;
+}
+#admission .admission_form form .main_form .student_name .status_box {
+  width: 70% !important;
+}
+#admission .admission_form form .main_form .student_name .sgender_box {
+  width: 100%;
+  display: flex;
+  padding: 5px 10px;
+  border: 2px solid #052E59;
+}
+#admission .admission_form form .main_form .student_name .sgender_box .gender_head {
+  width: 30%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#admission .admission_form form .main_form .student_name .sgender_box .genders {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+#admission .admission_form form .main_form .student_name .sgender_box .genders label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#admission .admission_form form .main_form .present_address {
+  padding: 40px 0;
+  margin: 70px 20px 0;
+  border: 2px dotted #052E59;
+  position: relative;
+}
+#admission .admission_form form .main_form .present_address::after {
+  content: "present address";
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+  position: absolute;
+  top: -10%;
+  left: 4%;
+  background-color: #FAD9C1;
+  padding: 0 10px;
+}
+#admission .admission_form form .main_form .present_address .student_name {
+  padding: 0;
+}
+#admission .admission_form form .main_form .present_address .student_name .present_sname_box {
+  margin: 0 10px;
+}
+#admission .admission_form form .main_form .present_address .p_address {
+  margin-top: 30px;
+}
+#admission .admission_form form .main_form .present_address .p_address .sname_box {
+  width: 100%;
+}
+#admission .admission_form form .main_form .permanent_address::after {
+  content: "permanent address";
+}
+#admission .admission_form form .main_form .studis_bottom {
+  margin-top: 30px;
+}
+#admission .admission_form form .main_form .student_declearation {
+  margin-top: 40px;
+}
+#admission .admission_form form .main_form .student_declearation h3 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #052E59;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+#admission .admission_form form .main_form .student_declearation h3::after {
+  content: "";
+  width: 40%;
+  height: 3px;
+  background-color: #C99789;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#admission .admission_form form .main_form .student_declearation p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 90%;
+  margin-left: 25px;
+}
+#admission .admission_form form .main_form .student_declearation .rules_stu_signature {
+  margin: 20px 0 0 25px;
+  display: flex;
+  justify-content: space-between;
+}
+#admission .admission_form form .main_form .student_declearation .rules_stu_signature .student_rules {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 40%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+#admission .admission_form form .main_form .student_declearation .rules_stu_signature .student_rules::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#admission .admission_form form .main_form .student_declearation .rules_stu_signature .student_rules:hover {
+  color: white;
+}
+#admission .admission_form form .main_form .student_declearation .rules_stu_signature .student_rules:hover::after {
+  width: 100%;
+}
+#admission .admission_form form .main_form .student_declearation .rules_stu_signature span {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+#admission .admission_form form .main_form .student_declearation .rules_stu_signature span label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-align: center;
+}
+#admission .admission_form form .main_form .student_declearation .rules_stu_signature span label input {
+  display: block;
+  background-color: transparent;
+  border-bottom: 3px dotted #052E59;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+#admission .admission_form form .main_form .student_declearation .head_parent_signature {
+  padding: 80px 25px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#admission .admission_form form .main_form .student_declearation .head_parent_signature span label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-align: center;
+}
+#admission .admission_form form .main_form .student_declearation .head_parent_signature span label input {
+  display: block;
+  background-color: transparent;
+  border-bottom: 3px dotted #052E59;
+  border-left: none;
+  border-top: none;
+  border-right: none;
 }/*# sourceMappingURL=style.css.map */

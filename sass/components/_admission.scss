@@ -1,0 +1,263 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#admission{
+    padding: 100px 0;
+    .admission_head{
+        h2{
+            @include  head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            width: fit-content;
+            margin: 0 auto;
+            position: relative;
+            &::after{
+                content: '';
+                width: 50%;
+                height: 4px;
+                background-color: $third_color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .admission_form{
+        margin-top: 50px;
+        p{
+            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+            span{
+                display: block;
+                margin-top: 30px;
+            }
+        }
+        form{
+            padding: 10px;
+            width: 80%;
+            margin: 40px auto 0;
+            background-color: #FAD9C1;
+            border-radius: 16px;
+            .form_head{
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                .form_logo{
+                    width: 23%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .form_head_txt{
+                    width: 50%;
+                    padding: 0 20px;
+                    text-align: center;
+                    h3{
+                        @include head ($ff: $primary_sont , $fw: 600 , $fs: 30px , $clr: $secondery_color );
+                    }
+                    p{
+                        @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                    }
+                    h4{
+                        text-transform: uppercase;
+                        @include head ($ff: $primary_sont , $fw: 500 , $fs: 40px , $clr: $secondery_color );
+                    }
+                }
+                .student_pic{
+                    width: 27%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 100px;
+                        height: 70px;
+                        border-radius: 10px;
+                        border: 3px solid $secondery_color;
+                    }
+                    input{
+                        width: 150px;
+                        margin-top: 10px;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .main_form{
+                margin-top: 20px;
+                position: relative;
+                &::after{
+                    content: '';
+                    height: 3px;
+                    width: 100%;
+                    background-color: $secondery_color;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .student_name{
+                    padding: 30px 20px 0;
+                    display: flex;
+                    gap: 30px;
+                    .sname_box{
+                        width: 50%;
+                        position: relative;
+                        input{
+                            padding: 10px;
+                            border: 2px solid $secondery_color;
+                            width: 100%;
+                            background-color: transparent;
+                        }
+                        label{
+                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: #651E3E);
+                            background-color: #FAD9C1;
+                            text-transform: capitalize;
+                            position: absolute;
+                            top: 5px;
+                            left: 10px;
+                            transition: .4s;
+                        }
+                        input:focus ~ label , input:valid ~ label{
+                            top: -15px;
+                            left: 25px;
+                            color: $secondery_color;
+                            font-size: 18px;
+                            background-color: #FAD9C1;
+                            padding: 0 5px;
+                        }
+                    }
+                    .course_name_box{
+                        width: 30%;
+                    }
+                    .status_box{
+                        width: 70% !important;
+                    }
+                    .sgender_box{
+                        width: 100%;
+                        display: flex;
+                        padding: 5px 10px;
+                        border: 2px solid $secondery_color;
+                        .gender_head{
+                            width: 30%;
+                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                            text-transform: capitalize;
+                        }
+                        .genders{
+                            width: 70%;
+                            display: flex;
+                            justify-content: space-between;
+                            label{
+                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+                .present_address{
+                    padding: 40px 0;
+                    margin: 70px 20px 0;
+                    border: 2px dotted $secondery_color;
+                    position: relative;
+                    &::after{
+                        content: 'present address';
+                        @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                        text-transform: capitalize;
+                        position: absolute;
+                        top: -10%;
+                        left: 4%;
+                        background-color: #FAD9C1;
+                        padding: 0 10px;
+                    }
+                    .student_name{
+                        padding: 0;
+                        .present_sname_box{
+                            margin: 0 10px;
+                        }
+                    }
+                    .p_address{
+                        margin-top: 30px;
+                        .sname_box{
+                            width: 100%;
+                        }
+                    }
+                }
+                .permanent_address{
+                    &::after{
+                        content: 'permanent address';
+                    }
+                }
+                .studis_bottom{
+                    margin-top: 30px;
+                }
+                .student_declearation{
+                    margin-top: 40px;
+                    h3{
+                        @include head ($ff: $primary_sont , $fw: 500 , $fs: 30px , $clr: $secondery_color );
+                        margin: 0 auto;
+                        text-transform: uppercase;
+                        padding-bottom: 10px;
+                        width: fit-content;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            width: 40%;
+                            height: 3px;
+                            background-color: $third_color;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    p{
+                        @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                        width: 90%;
+                        margin-left: 25px;
+                    }
+                    .rules_stu_signature{
+                        margin: 20px 0 0 25px ;
+                        display: flex;
+                        justify-content: space-between;
+                        .student_rules{
+                            @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 40% , $wth: 5% , $bg: $primary_color , $ptb: 0px , $plr: 10px );
+                            text-transform: capitalize;
+                            background-color: transparent;
+                        }
+                        span{
+                            width: 50%;
+                            display: flex;
+                            justify-content: end;
+                            label{
+                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                text-align: center;
+                                input{
+                                    display: block;
+                                    background-color: transparent;
+                                    border-bottom: 3px dotted $secondery_color;
+                                    border-left: none;
+                                    border-top: none;
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                    .head_parent_signature{
+                        padding: 80px 25px 50px;
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                            label{
+                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                text-align: center;
+                                input{
+                                    display: block;
+                                    background-color: transparent;
+                                    border-bottom: 3px dotted $secondery_color;
+                                    border-left: none;
+                                    border-top: none;
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

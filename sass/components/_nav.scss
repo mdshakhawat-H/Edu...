@@ -12,8 +12,7 @@ nav{
         justify-content: space-between;
         ul{
             width: 85%;
-            justify-content: center;
-            gap: 10px;
+            justify-content: space-between;
             li{
                 a{
                     @include btnani($ff: $secondery_font , $fw: 400 , $fs: 20px , $clr: $secondery_color , $wth: 0% , $bg: transparent );

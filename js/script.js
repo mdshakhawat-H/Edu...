@@ -115,3 +115,10 @@ $('.recent_slider').slick({
     ]
   });
 // ================ RECENT PART ENDED ===============
+// ================ ADMISSION FORM PART START ===============
+const image = document.querySelector(".stu_pic")
+      input = document.querySelector(".stu_file")
+  input.addEventListener("change" , ()=>{
+    image.src = URL.createObjectURL(input.files[0]);
+  });
+// ================ ADMISSION FORM PART ENDED ===============
