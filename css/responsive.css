@@ -1133,7 +1133,7 @@
         margin-left: 6px;
     }
     #admission .admission_form form .main_form .student_declearation .rules_stu_signature .student_rules {
-        font-size: 12px;
+        font-size: 9px;
         height: fit-content;
     }
     #admission .admission_form form .main_form .student_declearation .rules_stu_signature span label {
@@ -1164,9 +1164,145 @@
     #admission .admission_form form .main_form .student_declearation .add_button button {
         font-size: 12px;
         padding: 5px 10px;
+        width: 45%;
+    }
+    #admission .admission_form form .main_form .student_declearation .rules_stu_signature {
+        margin: 20px 0 0 0px;
     }
  }
-@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #admission {
+        padding: 55px 0;
+    }
+    #admission .admission_head h2 {
+        font-weight: 600;
+        font-size: 25px;
+        padding-bottom: 7px;
+    }
+    #admission .admission_head h2::after {
+        width: 60%;
+        height: 2px;
+    }
+    #admission .admission_form {
+        margin-top: 30px;
+    }
+    #admission .admission_form p {
+        font-size: 15px;
+    }
+    #admission .admission_form p span {
+        margin-top: 10px;
+    }
+    #admission .admission_form form {
+        width: 90%;
+        margin: 20px auto 0;
+        border-radius: 16px;
+    }
+    #admission .admission_form form .form_head .form_head_txt h3 {
+        font-size: 17px;
+    }
+    #admission .admission_form form .form_head .form_head_txt p {
+        font-size: 15px;
+    }
+    #admission .admission_form form .form_head .form_head_txt h4 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    #admission .admission_form form .form_head .student_pic img {
+        border: 1.5px solid #052E59;
+    }
+    #admission .admission_form form .form_head .student_pic input {
+        transform: scale(.5);
+    }
+    #admission .admission_form form .main_form::after {
+        height: 1.5px;
+    }
+    #admission .admission_form form .main_form .student_name {
+        padding: 20px 20px 0;
+        gap: 20px;
+    }
+    #admission .admission_form form .main_form .student_name .sname_box input {
+        border: 1.5px solid #052E59;
+        padding: 5px 10px;
+    }
+    #admission .admission_form form .main_form .student_name .sname_box label {
+        font-size: 15px;
+        top: 7px;
+        width: 60%;
+    }
+    #admission .admission_form form .main_form .student_name .sname_box input:focus ~ label, #admission .admission_form form .main_form .student_name .sname_box input:valid ~ label {
+        top: -12px;
+        left: 10px;
+        font-size: 14px;
+        width: fit-content;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box {
+        border: 1.5px solid #052E59;
+        justify-content: space-between;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box .gender_head {
+        font-size: 15px;
+        width: 25%;
+        position: relative;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box .gender_head::after{
+        content: '';
+        width: 1.5px;
+        height: 100%;
+        background-color: #052E59;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box .genders {
+        flex-wrap: wrap;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box .genders label {
+        font-size: 15px;
+    }
+    #admission .admission_form form .main_form .present_address {
+        padding: 30px 0;
+        margin: 50px 20px 0;
+        border: 1.5px dotted #052E59;
+    }
+    #admission .admission_form form .main_form .present_address::after {
+        font-size: 15px;
+        top: -8%;
+    }
+    #admission .admission_form form .main_form .student_name .course_name_box {
+        width: 47%;
+    }
+    #admission .admission_form form .main_form .student_declearation {
+        margin-top: 30px;
+    }
+    #admission .admission_form form .main_form .student_declearation h3 {
+        font-size: 17px;
+        padding-bottom: 8px;
+    }
+    #admission .admission_form form .main_form .student_declearation p {
+        font-size: 15px;
+        width: 93%;
+        margin-left: 0px;
+    }
+    #admission .admission_form form .main_form .student_declearation .rules_stu_signature .student_rules {
+        font-size: 15px;
+        padding: 5px ;
+    }
+    #admission .admission_form form .main_form .student_declearation .rules_stu_signature {
+        margin: 20px 0 0 0px;
+    }
+    #admission .admission_form form .main_form .student_declearation .rules_stu_signature span label {
+        font-size: 15px;
+    }
+    #admission .admission_form form .main_form .student_declearation .head_parent_signature span label {
+        font-size: 15px;
+    }
+    #admission .admission_form form .main_form .student_declearation .head_parent_signature {
+        padding: 80px 0px 50px;
+    }
+    #admission .admission_form form .main_form .student_declearation .add_button button {
+        font-size: 15px;
+    }
+ }
 @media (min-width: 768px) and (max-width: 991.98px) {  }
 @media (min-width: 992px) and (max-width: 1199.98px) {  }
 @media (min-width: 1200px) {  }
