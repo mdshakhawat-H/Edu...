@@ -218,6 +218,8 @@
                             @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 40% , $wth: 5% , $bg: $primary_color , $ptb: 0px , $plr: 10px );
                             text-transform: capitalize;
                             background-color: transparent;
+                            border: none;
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                         }
                         span{
                             width: 50%;
@@ -254,6 +256,18 @@
                                     border-right: none;
                                 }
                             }
+                        }
+                    }
+                    .add_button{
+                        padding-bottom: 50px;
+                        display: flex;
+                        justify-content: center;
+                        gap: 10%;
+                        button{
+                            @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 30% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 20px );
+                            background-color: transparent;
+                            border: none;
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                         }
                     }
                 }

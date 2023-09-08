@@ -16,7 +16,7 @@
     }
     header .main_head .headline p {
         font-size: 12px;
-        animation: scroll 12s linear infinite running;
+        animation: scroll 16s linear infinite running;
     }
     @keyframes scroll {
         from{
@@ -1002,6 +1002,175 @@
     }
  }
 /* =================== GLANCE PAGE REPONSIVE ENDED =================== */
+/* =================== ADMISSION PAGE REPONSIVE START =================== */
+@media (max-width: 575.98px) { 
+    #admission {
+        padding: 40px 0;
+    }
+    #admission .admission_head h2 {
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    #admission .admission_head h2::after {
+        width: 65%;
+        height: 1px;
+    }
+    #admission .admission_form {
+        margin-top: 15px;
+    }
+    #admission .admission_form p {
+        font-size: 12px;
+    }
+    #admission .admission_form p span {
+        margin-top: 10px;
+    }
+    #admission .admission_form form {
+        width: 90%;
+        margin: 20px auto 0;
+        border-radius: 8px;
+    }
+    #admission .admission_form form .form_head {
+        margin-top: 15px;
+    }
+    #admission .admission_form form .form_head .form_head_txt {
+        padding: 0px 10px;
+    }
+    #admission .admission_form form .form_head .form_head_txt h3 {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    #admission .admission_form form .form_head .form_head_txt p {
+        font-size: 10px;
+    }
+    #admission .admission_form form .form_head .form_head_txt h4 {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    #admission .admission_form form .form_head .student_pic img {
+        width: 65px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid #052E59;
+    }
+    #admission .admission_form form .form_head .student_pic input {
+        margin-top: 0px;
+        transform: scale(.4);
+    }
+    #admission .admission_form form .main_form {
+        margin-top: 10px;
+    }
+    #admission .admission_form form .main_form::after {
+        height: 1px;
+    }
+    #admission .admission_form form .main_form .student_name {
+        padding: 15px 5px 0;
+        display: flex;
+        gap: 10px;
+    }
+    #admission .admission_form form .main_form .student_name .sname_box input {
+        padding: 0 5px;
+        border: 1px solid #052E59;
+    }
+    #admission .admission_form form .main_form .student_name .sname_box label {
+        font-size: 12px;
+        left: 5px;
+        top: 2.5px;
+        width: 90%;
+        padding-bottom: 3px;
+    }
+    #admission .admission_form form .main_form .student_name .sname_box input:focus ~ label, #admission .admission_form form .main_form .student_name .sname_box input:valid ~ label {
+        top: -9px;
+        left: 9px;
+        font-size: 10px;
+        width: auto;
+        padding-bottom: 0;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box {
+        padding: 5px;
+        border: 1px solid #052E59;
+        justify-content: space-between;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box .gender_head {
+        font-size: 12px;
+        width: 25%;
+        position: relative;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box .gender_head::after{
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: #052E59;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box .genders {
+        flex-wrap: wrap;
+    }
+    #admission .admission_form form .main_form .student_name .sgender_box .genders label {
+        font-size: 12px;
+    }
+    #admission .admission_form form .main_form .present_address {
+        padding: 30px 0;
+        margin: 40px 0px 0;
+        border: 1px dotted #052E59;
+    }
+    #admission .admission_form form .main_form .present_address::after {
+        font-size: 15px;
+    }
+    #admission .admission_form form .main_form .student_declearation h3 {
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    #admission .admission_form form .main_form .student_declearation h3::after {
+        width: 60%;
+        height: 1px;
+    }
+    #admission .admission_form form .main_form .student_declearation p {
+        font-size: 12px;
+        width: 95%;
+        margin-left: 6px;
+    }
+    #admission .admission_form form .main_form .student_declearation .rules_stu_signature .student_rules {
+        font-size: 12px;
+        height: fit-content;
+    }
+    #admission .admission_form form .main_form .student_declearation .rules_stu_signature span label {
+        font-size: 12px;
+    }
+    #admission .admission_form form .main_form .student_declearation .rules_stu_signature span label input {
+        border-bottom: 2px dotted #052E59;
+        width: 100%;
+    }
+    #admission .admission_form form .main_form .student_declearation .head_parent_signature {
+        padding: 50px 0px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #admission .admission_form form .main_form .student_declearation .head_parent_signature span{
+        width: 40%;
+    }
+    #admission .admission_form form .main_form .student_declearation .head_parent_signature span label input {
+        width: 100%;
+        border-bottom: 2px dotted #052E59;
+    }
+    #admission .admission_form form .main_form .student_declearation .head_parent_signature span label {
+        font-size: 12px;
+    }
+    #admission .admission_form form .main_form .student_declearation .add_button {
+        padding-bottom: 25px;
+    }
+    #admission .admission_form form .main_form .student_declearation .add_button button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+ }
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 1200px) {  }
+/* =================== ADMISSION PAGE REPONSIVE ENDED =================== */
 @media (max-width: 575.98px) {  }
 @media (min-width: 576px) and (max-width: 767.98px) {  }
 @media (min-width: 768px) and (max-width: 991.98px) {  }
