@@ -16,6 +16,17 @@
     }
     header .main_head .headline p {
         font-size: 12px;
+        animation: scroll 12s linear infinite running;
+    }
+    @keyframes scroll {
+        from{
+            top: 20%;
+            left: 100%;
+        }
+        to{
+            top: 20%;
+            left: -300%;
+        }
     }
     nav .navbar-brand img {
 	width: 60%;
@@ -64,9 +75,14 @@
         height: 300px;
     }
     #banner .bnrs_item .bnr_txt p {
-        font-size: 12px;
+        width: 50%;
         margin: 20px 0;
-        padding: 5px 10px;
+        height: 30px;
+    }
+    #banner .bnrs_item .bnr_txt p span {
+        font-size: 12px;
+        width: 240px;
+        animation: bnrscroll 12s linear infinite;
     }
     nav .main_menu .log_sign a {
         font-size: 12px;
@@ -327,6 +343,20 @@
     header .main_head .social ul li a {
         font-size: 20px;
     }
+    header .main_head .headline p {
+        font-size: 15px;
+        animation: scroll 10s linear infinite running;
+    }
+    @keyframes scroll {
+        from{
+            top: 20%;
+            left: 100%;
+        }
+        to{
+            top: 20%;
+            left: -300%;
+        }
+    }
     nav .navbar-brand img {
         width: 85%;
     }
@@ -360,9 +390,14 @@
         font-size: 30px;
     }
     #banner .bnrs_item .bnr_txt p {
-        font-size: 15px;
-        margin: 25px 0;
-        padding: 10px 10px;
+        width: 50%;
+        margin: 20px 0;
+        height: 30px;
+    }
+    #banner .bnrs_item .bnr_txt p span {
+        font-size: 12px;
+        width: 240px;
+        animation: bnrscroll 12s linear infinite;
     }
     #banner .bnrs_item .bnr_txt a {
         font-size: 15px;
@@ -584,6 +619,20 @@
     }
     header .main_head .social ul {
         gap: 30px;
+    }
+    header .main_head .headline p {
+        font-size: 18px;
+        animation: scroll 15s linear infinite running;
+    }
+    @keyframes scroll {
+        from{
+            top: 20%;
+            left: 100%;
+        }
+        to{
+            top: 20%;
+            left: -300%;
+        }
     }
     nav .main_menu ul li a {
         font-size: 18px;
