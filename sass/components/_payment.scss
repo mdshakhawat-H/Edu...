@@ -1,0 +1,99 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#payment{
+    padding: 100px 0;
+    .payment_head{
+        h2{
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+            text-transform: capitalize;
+            padding-bottom: 10px;
+            width: fit-content;
+            margin: 0 auto;
+            position: relative;
+            &::after{
+                content: '';
+                width: 50%;
+                height: 4px;
+                background-color: $third-color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        p{
+            margin-top: 50px;
+            text-align: center;
+            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+        }
+    }
+    .pay{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        form{
+            padding: 50px 20px;
+            width: 60%;
+            background-color: #F5F5F5;
+            border: 2px solid $secondery_color;
+            border-radius: 10px;
+            .purpose_label{
+                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                span{
+                    display: block;
+                }
+                .icngap{
+                    padding-right: 10px;
+                }
+                select{
+                    margin-top: 10px;
+                    width: 100%;
+                    background-color: transparent;
+                    text-align: center;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                }
+            }
+            .method{
+                margin-top: 30px;
+                ul{
+                    padding: 15px 5px;
+                    background-color: white;
+                    justify-content: space-between;
+                    row-gap: 10px;
+                    li{
+                        button{
+                            padding: 10px ;
+                            border-radius: 0;
+                            border: none;
+                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                            background-color: #F5F5F5;
+                            height: 50px;
+                            .payicon{
+                                width: 50px;
+                                padding-right: 10px;
+                            }
+                        }
+                        .active{
+                            background-color: $third-color;
+                        }
+                    }
+                }
+                .tab-content{
+                    .bkash_tab{
+                        span{
+                            margin-top: 50px;
+                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                        }
+                        .QRCode{
+                            text-align: center;
+                            img{
+                                margin-top: 20px;
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

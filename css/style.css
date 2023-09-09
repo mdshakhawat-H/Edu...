@@ -38,6 +38,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1337,4 +1341,110 @@ nav .main_menu .log_sign a:hover::after {
 }
 #admission .admission_form form .main_form .student_declearation .add_button button:hover::after {
   width: 100%;
+}
+
+#payment {
+  padding: 100px 0;
+}
+#payment .payment_head h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+}
+#payment .payment_head h2::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: #C99789;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#payment .payment_head p {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#payment .pay {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#payment .pay form {
+  padding: 50px 20px;
+  width: 60%;
+  background-color: #F5F5F5;
+  border: 2px solid #052E59;
+  border-radius: 10px;
+}
+#payment .pay form .purpose_label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#payment .pay form .purpose_label span {
+  display: block;
+}
+#payment .pay form .purpose_label .icngap {
+  padding-right: 10px;
+}
+#payment .pay form .purpose_label select {
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+#payment .pay form .method {
+  margin-top: 30px;
+}
+#payment .pay form .method ul {
+  padding: 15px 5px;
+  background-color: white;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+#payment .pay form .method ul li button {
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  background-color: #F5F5F5;
+  height: 50px;
+}
+#payment .pay form .method ul li button .payicon {
+  width: 50px;
+  padding-right: 10px;
+}
+#payment .pay form .method ul li .active {
+  background-color: #C99789;
+}
+#payment .pay form .method .tab-content .bkash_tab span {
+  margin-top: 50px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#payment .pay form .method .tab-content .bkash_tab .QRCode {
+  text-align: center;
+}
+#payment .pay form .method .tab-content .bkash_tab .QRCode img {
+  margin-top: 20px;
+  width: 40%;
 }/*# sourceMappingURL=style.css.map */
