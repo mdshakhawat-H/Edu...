@@ -91,7 +91,26 @@
                                 width: 40%;
                             }
                         }
+                        .pay_info{
+                            margin-top: 50px;
+                        }
                     }
+                    .Credit_tab{
+                        margin-top: 50px;
+                    }
+                    .bank_tab{
+                        margin-top: 50px;
+                    }
+                    .paypal_tab{
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .pay_btn{
+                padding: 50px 0;
+                text-align: center;
+                button{
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: fit-content , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px )
                 }
             }
         }

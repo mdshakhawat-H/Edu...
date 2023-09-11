@@ -64,8 +64,8 @@
               <a class="nav-link" aria-disabled="true">Admission</a>
               <ul>
                 <li><a href="admission.html">Apply Now</a></li>
-                <li><a href="#">Fees and Payment</a></li>
-                <li><a href="#">Scholarships</a></li>
+                <li><a href="payment.html">Fees and Payment</a></li>
+                <li><a href="scholarship.html">Scholarships</a></li>
                 <li><a href="#">Transfer Process</a></li>
               </ul>
             </li>
@@ -102,96 +102,104 @@
       </div>
     </nav>
     <!-- ================ NAV PART ENDED =============== -->
-    <!-- ================ PAYMENT PART START =============== -->
-    <section id="payment">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="payment_head">
-              <h2>make payment</h2>
-              <p>Please , Follow those step below to payment successfully.</p>
-            </div>
-            <div class="pay">
-              <form action="#">
-                <label for="purpose" class="purpose_label"><span><i class="fa-solid fa-circle-question icngap"></i>In which purpose do you want to pay?</span>
-                  <select name="purpose" id="purpose" required>
-                    <option value="purpose" selected disabled>---select purpose---</option>
-                    <option value="purpose">admission fee</option>
-                    <option value="purpose">monthly fee</option>
-                    <option value="purpose">exam fee</option>
-                    <option value="purpose">section fee</option>
-                    <option value="purpose">tuition fee</option>
-                    <option value="purpose">sport fee</option>
-                  </select>
-                </label>
-                <div class="purpose_label method"><span><i class="fa-solid fa-wallet icngap"></i>Select your payment method.</span>
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="bkash-tab" data-bs-toggle="tab" data-bs-target="#bkash-tab-pane" type="button" role="tab" aria-controls="bkash-tab-pane" aria-selected="true"><img src="images/bkash.png" alt="bkash" class="payicon">bkash account</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="nagad-tab" data-bs-toggle="tab" data-bs-target="#nagad-tab-pane" type="button" role="tab" aria-controls="nagad-tab-pane" aria-selected="false"><img src="images/nagad.png" class="payicon" alt="nagad">nagad account</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="cellfin-tab" data-bs-toggle="tab" data-bs-target="#cellfin-tab-pane" type="button" role="tab" aria-controls="cellfin-tab-pane" aria-selected="false"><img src="images/celfin.png" alt="cellfin" class="payicon">cellfin</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="cradit-tab" data-bs-toggle="tab" data-bs-target="#cradit-tab-pane" type="button" role="tab" aria-controls="cradit-tab-pane" aria-selected="false"><i class="fa-solid fa-credit-card payicon"></i>master card</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="bank-tab" data-bs-toggle="tab" data-bs-target="#bank-tab-pane" type="button" role="tab" aria-controls="bank-tab-pane" aria-selected="false"><i class="fa-solid fa-building-columns payicon"></i>bank account</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-tab-pane" type="button" role="tab" aria-controls="paypal-tab-pane" aria-selected="false"><i class="fa-brands fa-paypal payicon"></i>paypal account</button>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active bkash_tab" id="bkash-tab-pane" role="tabpanel" aria-labelledby="bkash-tab" tabindex="0">
-                      <!-- ======================================== -->
-                      <span>To make payment by Bkash , Open your Bkash app and tap "Payment" option then scan the QR code given bellow...</span>
-                      <div class="QRCode"><img src="images/demoQRcode.png" alt="demoQRcode"></div>
-                      <div class="pay_info">
-                        <p>After payment , You should fill this form below using correct information...</p>
-                        <label for="pay_nmbr"><span>Sender Number :</span><input id="pay_nmbr" type="number"></label>
-                        <label for="pay_amnt"><span>Enter Amount :</span><input type="number" name="pay_amnt" id="pay_amnt"></label>
-                        <label for="pay_transid"><span>Enter Transection ID :</span><input type="text" id="pay_transid"></label>
-                      </div>
-                      <!-- ======================================== -->
+    <!-- ================ SCHOLARSHIP PART START =============== -->
+    <section id="scholarship">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="scholarship_head">
+                        <h2>scholarship</h2>
+                        <p>Scholarship information will be published here </p>
                     </div>
-                    <div class="tab-pane fade bkash_tab" id="nagad-tab-pane" role="tabpanel" aria-labelledby="nagad-tab" tabindex="0">
-                      <!-- ======================================== -->
-                      <span>To make payment by Nagad , Open your Nagad app and tap "Marchent Pay" option then scan the QR code given bellow...</span>
-                      <div class="QRCode"><img src="images/demoQRcode.png" alt="demoQRcode"></div>
-                      <div class="pay_info">
-                        <p>After payment , You should fill this form below using correct information...</p>
-                        <label for="pay_nmbr"><span>Sender Number :</span><input id="pay_nmbr" type="number"></label>
-                        <label for="pay_amnt"><span>Enter Amount :</span><input type="number" name="pay_amnt" id="pay_amnt"></label>
-                        <label for="pay_transid"><span>Enter Transection ID :</span><input type="text" id="pay_transid"></label>
-                      </div>
-                      <!-- ======================================== -->
+                    <div class="scholar_txt">
+                        <p> Students who are outstandingly brilliant but financially challenged can apply for this programme. The accommodation, medical, study support – all are completely free. The Parents might have to contribute some portion depending on their income.</p>
                     </div>
-                    <div class="tab-pane fade" id="cellfin-tab-pane" role="tabpanel" aria-labelledby="cellfin-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade Credit_tab" id="cradit-tab-pane" role="tabpanel" aria-labelledby="cradit-tab" tabindex="0">
-                      <p>card details will show here</p>
+                    <div class="scholar_form">
+                        <form action="#">
+                            <div class="form_head">
+                              <div class="form_logo">
+                                <img src="images/logo.png" alt="logo">
+                              </div>
+                              <div class="form_head_txt">
+                                <h3>Divine School & College</h3>
+                                <p>anather way to education</p>
+                                <h4>scholarship application form</h4>
+                              </div>
+                              <div class="student_pic">
+                                <img class="stu_pic" src="images/user.png" alt="user">
+                                <input class="stu_file" type="file">
+                              </div>
+                            </div>
+                            <div class="form_main">
+                                <div class="stu_name">
+                                    <span>
+                                      <label for="stu_name">student's full name</label>
+                                      <input type="text" id="stu_name">
+                                    </span>
+                                    <span>
+                                      <label for="stu_father_name">father's full name</label>
+                                      <input type="text" id="stu_father_name">
+                                    </span>
+                                </div>
+                                <div class="stu_name">
+                                    <span>
+                                      <label for="stu_mother_name">mother's full name</label>
+                                      <input type="text" id="stu_mother_name">
+                                    </span>
+                                    <span>
+                                      <label for="stu_date_birth">date of birth</label>
+                                      <input type="date" id="stu_date_birth">
+                                    </span>
+                                </div>
+                                <div class="stu_name">
+                                    <span>
+                                      <label for="stu_id">Birth/ID number</label>
+                                      <input type="number" id="stu_id">
+                                    </span>
+                                    <span>
+                                      <label for="stu_roll">class roll</label>
+                                      <input type="number" id="stu_roll">
+                                    </span>
+                                </div>
+                                <div class="stu_name">
+                                    <span>
+                                      <label for="stu_cls">coure name</label>
+                                      <input type="text" id="stu_cls">
+                                    </span>
+                                    <span>
+                                      <label for="stu_address">address</label>
+                                      <input type="text" id="stu_address">
+                                    </span>
+                                </div>
+                                <div class="stu_name">
+                                    <span>
+                                      <label for="stu_cls_year">academic year</label>
+                                      <input type="number" id="stu_cls_year">
+                                    </span>
+                                    <span>
+                                      <label for="stu_nmbr">contact number</label>
+                                      <input type="number" id="stu_nmbr">
+                                    </span>
+                                </div>
+                                <div class="stu_name signs">
+                                    <span>
+                                      <input type="text" id="stu_sign">
+                                      <label for="stu_sign">student signature</label>
+                                    </span>
+                                    <span>
+                                      <input type="text" id="stu_parent_sign">
+                                      <label for="stu_parent_sign">parent signature</label>
+                                    </span>
+                                </div>
+                              </div>
+                          </form>
                     </div>
-                    <div class="tab-pane fade bank_tab" id="bank-tab-pane" role="tabpanel" aria-labelledby="bank-tab" tabindex="0">
-                      <p>bank details will show here</p>
-                    </div>
-                    <div class="tab-pane fade paypal_tab" id="paypal-tab-pane" role="tabpanel" aria-labelledby="paypal-tab" tabindex="0">
-                      <p>account will be linked here</p>
-                    </div>
-                  </div>
-                  <div class="pay_btn">
-                    <button type="submit">Submit Payment</button>
-                  </div>
                 </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
     </section>
-    <!-- ================ PAYMENT PART ENDED =============== -->
+    <!-- ================ SCHOLARSHIP PART ENDED =============== -->
+
     <!-- ================ FOOTER PART START =============== -->
     <section id="footer">
       <div class="container">
