@@ -1768,27 +1768,26 @@ nav .main_menu .log_sign a:hover::after {
 #result .main_result .tab-content {
   margin-top: 50px;
 }
-#result .main_result .tab-content .tab-pane .result_year {
+#result .main_result .tab-content .tab-pane .result {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-#result .main_result .tab-content .tab-pane .result_year table {
-  border: 2px solid #052E59;
+#result .main_result .tab-content .tab-pane .result .result_year table {
   width: 100%;
 }
-#result .main_result .tab-content .tab-pane .result_year table caption {
+#result .main_result .tab-content .tab-pane .result .result_year table caption {
   caption-side: top;
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 25px;
   color: #052E59;
 }
-#result .main_result .tab-content .tab-pane .result_year table tr th, #result .main_result .tab-content .tab-pane .result_year table tr td {
+#result .main_result .tab-content .tab-pane .result .result_year table tr th, #result .main_result .tab-content .tab-pane .result .result_year table tr td {
   text-align: center;
   border: 2px solid #052E59;
 }
-#result .main_result .tab-content .tab-pane .result_year table tr th {
+#result .main_result .tab-content .tab-pane .result .result_year table tr th {
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -1796,7 +1795,7 @@ nav .main_menu .log_sign a:hover::after {
   padding: 15px;
   text-transform: capitalize;
 }
-#result .main_result .tab-content .tab-pane .result_year table tr td {
+#result .main_result .tab-content .tab-pane .result .result_year table tr td {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 22px;

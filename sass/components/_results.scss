@@ -44,30 +44,31 @@
         .tab-content{
             margin-top: 50px;
             .tab-pane{
-                .result_year{
+                .result{
                     display: flex;
                     flex-direction: column;
                     gap: 40px;
-                    table{
-                        border: 2px solid $secondery_color;
-                        width: 100%;
-                        caption{
-                            caption-side: top;
-                            @include discription ($ff: $secondery_font , $fw: 600 , $fs: 25px , $clr: $secondery_color);
-                        }
-                        tr{
-                            th , td{
-                                text-align: center;
-                                border: 2px solid $secondery_color;
+                    .result_year{
+                        table{
+                            width: 100%;
+                            caption{
+                                caption-side: top;
+                                @include discription ($ff: $secondery_font , $fw: 600 , $fs: 25px , $clr: $secondery_color);
                             }
-                            th {
-                                @include discription ($ff: $secondery_font , $fw: 600 , $fs: 20px , $clr: $secondery_color);
-                                padding: 15px;
-                                text-transform: capitalize;
-                            }
-                            td{
-                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
-                                padding: 10px 15px;
+                            tr{
+                                th , td{
+                                    text-align: center;
+                                    border: 2px solid $secondery_color;
+                                }
+                                th {
+                                    @include discription ($ff: $secondery_font , $fw: 600 , $fs: 20px , $clr: $secondery_color);
+                                    padding: 15px;
+                                    text-transform: capitalize;
+                                }
+                                td{
+                                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                    padding: 10px 15px;
+                                }
                             }
                         }
                     }
