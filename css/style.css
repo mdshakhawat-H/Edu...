@@ -46,6 +46,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1650,4 +1654,288 @@ nav .main_menu .log_sign a:hover::after {
   border-left: none;
   border-right: none;
   border-bottom: 3px dotted #052E59;
+}
+
+#result {
+  padding: 100px 0;
+}
+#result .result_head h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+#result .result_head h2::after {
+  content: "";
+  height: 3px;
+  width: 50%;
+  background-color: #C99789;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#result .main_result {
+  margin-top: 70px;
+}
+#result .main_result ul {
+  justify-content: center;
+  gap: 20%;
+}
+#result .main_result ul li .active {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #052E59;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#result .main_result ul li .active::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#result .main_result ul li .active:hover {
+  color: white;
+}
+#result .main_result ul li .active:hover::after {
+  width: 100%;
+}
+#result .main_result ul li button {
+  text-transform: capitalize;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  border: 2px solid #052E59;
+  border-top-right-radius: 0;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 0;
+}
+#result .main_result ul li button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#result .main_result ul li button:hover {
+  color: white;
+}
+#result .main_result ul li button:hover::after {
+  width: 100%;
+}
+#result .main_result .tab-content {
+  margin-top: 50px;
+}
+#result .main_result .tab-content .tab-pane .result_year {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#result .main_result .tab-content .tab-pane .result_year table {
+  border: 2px solid #052E59;
+  width: 100%;
+}
+#result .main_result .tab-content .tab-pane .result_year table caption {
+  caption-side: top;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #052E59;
+}
+#result .main_result .tab-content .tab-pane .result_year table tr th, #result .main_result .tab-content .tab-pane .result_year table tr td {
+  text-align: center;
+  border: 2px solid #052E59;
+}
+#result .main_result .tab-content .tab-pane .result_year table tr th {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #052E59;
+  padding: 15px;
+  text-transform: capitalize;
+}
+#result .main_result .tab-content .tab-pane .result_year table tr td {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  padding: 10px 15px;
+}
+#result .main_result .tab-content .indi_result .indi_main {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 3px solid #052E59;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_header {
+  display: flex;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_header .indi_logo {
+  width: 30%;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_header .indi_logo img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  background-color: darkgray;
+  padding: 20px;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_header .indi_head {
+  width: 70%;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(5, 46, 89, 0.5607843137);
+  border-top-right-radius: 10px;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_header .indi_head p {
+  border-top-right-radius: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  padding: 5px 20px;
+  background-color: rgba(5, 46, 89, 0.2745098039);
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_header .indi_head h3 {
+  padding: 5px 20px;
+  text-transform: capitalize;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form {
+  padding-top: 40px;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border: 2px solid #C99789;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_form_item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_form_item span {
+  display: flex;
+  gap: 10%;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_form_item span label, #result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_form_item span input {
+  width: 50%;
+  text-transform: capitalize;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_form_item span select {
+  width: 50%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_form_item span select option {
+  text-align: center;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_button {
+  padding: 50px 0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_button button {
+  text-transform: capitalize;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 40%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_button button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_button button:hover {
+  color: white;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_button button:hover::after {
+  width: 100%;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_bottom {
+  margin-top: 40px;
+  border-top: 3px solid #052E59;
+  padding: 20px 0;
+  background-color: darkgrey;
+}
+#result .main_result .tab-content .indi_result .indi_main .indi_bottom p {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */

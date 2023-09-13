@@ -1,0 +1,168 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#result{
+    padding: 100px 0;
+    .result_head{
+        h2{
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+            text-transform: capitalize;
+            width: fit-content;
+            padding-bottom: 10px;
+            margin: 0 auto;
+            position: relative;
+            &::after{
+                content: '';
+                height: 3px ;
+                width: 50%;
+                background-color: $third-color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .main_result{
+        margin-top: 70px;
+        ul{
+            justify-content: center;
+            gap: 20%;
+            li{
+                .active{
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color , $width: 100% , $wth: 5% , $bg: $secondery_color , $ptb: 5px , $plr: 50px );
+                }
+                button{
+                    text-transform: capitalize;
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 100% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px );
+                    border: 2px solid $secondery_color;
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 16px;
+                    border-bottom-right-radius: 16px;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+        .tab-content{
+            margin-top: 50px;
+            .tab-pane{
+                .result_year{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    table{
+                        border: 2px solid $secondery_color;
+                        width: 100%;
+                        caption{
+                            caption-side: top;
+                            @include discription ($ff: $secondery_font , $fw: 600 , $fs: 25px , $clr: $secondery_color);
+                        }
+                        tr{
+                            th , td{
+                                text-align: center;
+                                border: 2px solid $secondery_color;
+                            }
+                            th {
+                                @include discription ($ff: $secondery_font , $fw: 600 , $fs: 20px , $clr: $secondery_color);
+                                padding: 15px;
+                                text-transform: capitalize;
+                            }
+                            td{
+                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .indi_result{
+                .indi_main{
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 10px;
+                    border: 3px solid $secondery_color;
+                    .indi_header{
+                        display: flex;
+                        .indi_logo{
+                            width: 30%;
+                            img{
+                                border-top-left-radius: 10px;
+                                border-bottom-left-radius: 10px;
+                                width: 100%;
+                                background-color: darkgray;
+                                padding: 20px;
+                            }
+                        }
+                        .indi_head{
+                            width: 70%;
+                            border-bottom-right-radius: 10px;
+                            background-color: #052e598f;
+                            border-top-right-radius: 10px;
+                            p{
+                                border-top-right-radius: 10px;
+                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: #fff);
+                                padding: 5px 20px;
+                                background-color: #052e5946;
+                            }
+                            h3{
+                                padding: 5px 20px;
+                                text-transform: capitalize;
+                                @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: #fff );
+                            }
+                        }
+                    }
+                    .indi_form{
+                        padding-top: 40px;
+                        form{
+                            width: 75%;
+                            margin: 0 auto;
+                            padding: 20px 40px;
+                            border: 2px solid $third-color;
+                            .indi_form_item{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                                span{
+                                    display: flex;
+                                    gap: 10%;
+                                    label , input{
+                                        width: 50%;
+                                        text-transform: capitalize;
+                                        @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                    }
+                                    select{
+                                        width: 50%;
+                                        @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                        text-transform: capitalize;
+                                        option{
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                            .indi_button{
+                                padding: 50px 0 30px;
+                                display: flex;
+                                justify-content: space-around;
+                                button{
+                                    text-transform: capitalize;
+                                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 40% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px );
+                                }
+                            }
+                        }
+                    }
+                    .indi_bottom{
+                        margin-top: 40px;
+                        border-top: 3px solid $secondery_color;
+                        padding: 20px 0;
+                        background-color: darkgrey;
+                        p{
+                            display: flex;
+                            justify-content: space-around;
+                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
