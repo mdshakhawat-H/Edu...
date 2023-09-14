@@ -50,6 +50,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1937,4 +1941,39 @@ nav .main_menu .log_sign a:hover::after {
   font-size: 22px;
   color: #052E59;
   text-transform: capitalize;
+}
+
+#messege .principal_contct {
+  padding: 40px 0 0;
+}
+#messege .principal_contct h3 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #C99789;
+  text-transform: capitalize;
+}
+#messege .principal_contct ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+#messege .principal_contct ul li {
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#messege .principal_contct ul li a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#messege .principal_contct ul li a i {
+  transition: 0.4s;
+}
+#messege .principal_contct ul li:hover a i {
+  transform: rotate(360deg);
 }/*# sourceMappingURL=style.css.map */

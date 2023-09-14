@@ -1,0 +1,32 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#messege{
+    .principal_contct{
+        padding: 40px 0 0;
+        h3{
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 35px , $clr: $third-color );
+            text-transform: capitalize;
+        }
+        ul{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            li{
+                padding: 20px;
+                background-color: $primary_color;
+                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                a{
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                    i{
+                        transition: .4s;
+                    }
+                }
+                &:hover a i{
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}

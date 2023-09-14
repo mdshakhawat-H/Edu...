@@ -221,6 +221,16 @@
         letter-spacing: 5px;
         font-weight: 500;
     }
+    #messege .principal_contct h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    #messege .principal_contct ul li {
+        padding: 5px 10px;
+    }
+    #messege .principal_contct ul li a {
+        font-size: 12px;
+    }
     #recent {
         padding: 40px 0;
     }
@@ -522,6 +532,16 @@
     #messege .main_messege .principal_messege .principal_signature .prin_name {
         letter-spacing: 6px;
     }
+    #messege .principal_contct h3 {
+        font-weight: 600;
+        font-size: 25px;
+    }
+    #messege .principal_contct ul li {
+        padding: 10px 10px;
+    }
+    #messege .principal_contct ul li a {
+        font-size: 15px;
+    }
     #recent {
         padding: 55px 0;
     }
@@ -734,6 +754,16 @@
     #messege .main_messege .principal_messege .principal_signature {
         font-size: 18px;
     }
+    #messege .principal_contct h3 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+    #messege .principal_contct ul li {
+        padding: 10px 15px;
+    }
+    #messege .principal_contct ul li a {
+        font-size: 18px;
+    }
     #recent {
         padding: 80px 0;
     }
@@ -863,6 +893,16 @@
         letter-spacing: 7px;
     }
     #messege .main_messege .principal_messege .principal_signature {
+        font-size: 20px;
+    }
+    #messege .principal_contct h3 {
+        font-weight: 700;
+        font-size: 35px;
+    }
+    #messege .principal_contct ul li {
+        padding: 15px;
+    }
+    #messege .principal_contct ul li a {
         font-size: 20px;
     }
     #recent .recent_head h2 {
