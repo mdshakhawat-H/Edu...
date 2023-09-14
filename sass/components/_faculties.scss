@@ -1,0 +1,52 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#faculty{
+    padding: 100px 0;
+    .faculty_head{
+        h2{
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+            text-transform: capitalize;
+            width: fit-content;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 50%;
+                height: 3px ;
+                background-color: $secondery_color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .faculties{
+        margin-top: 50px;
+        .faculty_item{
+            border: 2px solid $secondery_color;
+            display: flex;
+            gap: 20px;
+            .facylty_txt{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3{
+                    @include head ($ff: $primary_sont , $fw: 600 , $fs: 30px , $clr: $secondery_color );
+                }
+                h4{
+                    @include head ($ff: $primary_sont , $fw: 500 , $fs: 25px , $clr: $secondery_color );
+                }
+                h5{
+                    text-transform: capitalize;
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color)
+                }
+                a{
+                    margin-top: 20px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 100% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px );
+                }
+            }
+        }
+    }
+}

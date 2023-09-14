@@ -54,6 +54,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1976,4 +1984,184 @@ nav .main_menu .log_sign a:hover::after {
 }
 #messege .principal_contct ul li:hover a i {
   transform: rotate(360deg);
+}
+
+#admissioninfo {
+  padding: 100px 0;
+}
+#admissioninfo .addinfo_head h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+}
+#admissioninfo .addinfo_head h2::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: #052E59;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#admissioninfo .info {
+  margin-top: 60px;
+}
+#admissioninfo .info nav {
+  background-color: rgba(0, 0, 0, 0.3215686275);
+  padding: 10px;
+}
+#admissioninfo .info nav .nav {
+  display: flex;
+  justify-content: space-around;
+  border: none;
+  row-gap: 20px;
+}
+#admissioninfo .info nav .nav button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#admissioninfo .info nav .nav .active {
+  background-color: #C99789;
+}
+#admissioninfo .info #nav-tabContent {
+  border: 4px solid rgba(0, 0, 0, 0.3215686275);
+}
+#admissioninfo .info #nav-tabContent .tab-pane ul {
+  padding: 20px 40px;
+}
+#admissioninfo .info #nav-tabContent .tab-pane ul li {
+  list-style: square;
+  line-height: 50px;
+}
+#admissioninfo .info #nav-tabContent .tab-pane ul li p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#admissioninfo .info #nav-tabContent .tab-pane .procedure_txt {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+  padding: 20px 40px;
+}
+#admissioninfo .info #nav-tabContent .tab-pane .procedure_txt span {
+  display: block;
+  margin-top: 50px;
+}
+#admissioninfo .info #nav-tabContent .tab-pane h3 {
+  text-transform: capitalize;
+  padding: 20px 40px;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #052E59;
+}
+
+#faculty {
+  padding: 100px 0;
+}
+#faculty .faculty_head h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+}
+#faculty .faculty_head h2::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: #052E59;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#faculty .faculties {
+  margin-top: 50px;
+}
+#faculty .faculties .faculty_item {
+  border: 2px solid #052E59;
+  display: flex;
+  gap: 20px;
+}
+#faculty .faculties .faculty_item .facylty_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#faculty .faculties .faculty_item .facylty_txt h3 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #052E59;
+}
+#faculty .faculties .faculty_item .facylty_txt h4 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #052E59;
+}
+#faculty .faculties .faculty_item .facylty_txt h5 {
+  text-transform: capitalize;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#faculty .faculties .faculty_item .facylty_txt a {
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#faculty .faculties .faculty_item .facylty_txt a::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#faculty .faculties .faculty_item .facylty_txt a:hover {
+  color: white;
+}
+#faculty .faculties .faculty_item .facylty_txt a:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
