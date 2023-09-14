@@ -115,15 +115,9 @@ $('.recent_slider').slick({
     ]
   });
 // ================ RECENT PART ENDED ===============
-// ================ ADMISSION FORM PART START ===============
-const image = document.querySelector(".stu_pic")
-      input = document.querySelector(".stu_file")
-  input.addEventListener("change" , ()=>{
-    image.src = URL.createObjectURL(input.files[0]);
-  });
-// ================ ADMISSION FORM PART ENDED ===============
+// ================ FACULTIES PART START ===============
 $('.faculties').slick({
-  autoplay: true,
+  // autoplay: true,
   dots: false,
   infinite: true,
   speed: 300,
@@ -157,3 +151,11 @@ $('.faculties').slick({
     // instead of a settings object
   ]
 });
+// ================ FACULTIES PART ENDED ===============
+// ================ ADMISSION FORM PART START ===============
+const image = document.querySelector(".stu_pic")
+      input = document.querySelector(".stu_file")
+  input.addEventListener("change" , ()=>{
+    image.src = URL.createObjectURL(input.files[0]);
+  });
+// ================ ADMISSION FORM PART ENDED ===============

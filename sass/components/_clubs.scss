@@ -1,0 +1,47 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#clubs{
+    padding: 100px 0;
+    .club_head{
+        h2{
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+            text-transform: capitalize;
+            width: fit-content;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 50%;
+                height: 3px;
+                background-color: $secondery_color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .clubs{
+        margin-top: 50px;
+        border: 2px solid #00000052;
+        ul{
+            padding: 10px;
+            background-color: #00000052;
+            justify-content: space-around;
+            li{
+                button{
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                    text-transform: capitalize;
+                }
+                .active{
+                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color);
+                    background-color: $secondery_color;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 16px;
+                    border-bottom-right-radius: 16px;
+                }
+            }
+        }
+    }
+}

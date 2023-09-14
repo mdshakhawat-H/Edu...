@@ -22,15 +22,41 @@
         }
     }
     .faculties{
-        margin-top: 50px;
+        margin-top: 100px;
+        position: relative;
+        .slick-arrow{
+            @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 15% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 20px )
+        }
+        .slick-prev{
+            position: absolute !important;
+            top: -15%;
+            left: 1%;
+        }
+        .slick-next{
+            position: absolute !important;
+            top: -15%;
+            left: 84%;
+        }
         .faculty_item{
+            padding: 20px 5px;
+            margin: 0 10px;
+            width: 33.33%;
             border: 2px solid $secondery_color;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
+            .faculty_img{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
             .facylty_txt{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 h3{
                     @include head ($ff: $primary_sont , $fw: 600 , $fs: 30px , $clr: $secondery_color );
                 }
