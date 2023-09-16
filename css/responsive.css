@@ -1649,8 +1649,46 @@
     }
  }
 /* =================== RESULTS PAGE REPONSIVE ENDED =================== */
-@media (max-width: 575.98px) {  }
+/* =================== ADMISSIONINFO PAGE REPONSIVE START =================== */
+@media (max-width: 575.98px) { 
+    #admissioninfo {
+        padding: 40px 0;
+    }
+    #admissioninfo .addinfo_head h2 {
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 4px;
+    }
+    #admissioninfo .addinfo_head h2::after {
+        height: 1px;
+    }
+    #admissioninfo .info {
+        margin-top: 25px;
+    }
+    #admissioninfo .info nav .nav button {
+        font-size: 12px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane ul li p {
+        font-size: 12px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane ul li {
+        line-height: 20px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane .procedure_txt {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane .procedure_txt span {
+        margin-top: 20px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane h3 {
+        padding: 10px 10px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+ }
 @media (min-width: 576px) and (max-width: 767.98px) {  }
 @media (min-width: 768px) and (max-width: 991.98px) {  }
 @media (min-width: 992px) and (max-width: 1199.98px) {  }
 @media (min-width: 1200px) {  }
+/* =================== ADMISSIONINFO PAGE REPONSIVE ENDED =================== */
