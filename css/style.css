@@ -137,6 +137,9 @@ header .main_head .headline {
   width: 33.333%;
   overflow: hidden;
 }
+header .main_head .headline:hover p {
+  animation-play-state: paused;
+}
 header .main_head .headline p {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;

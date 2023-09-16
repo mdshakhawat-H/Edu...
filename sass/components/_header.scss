@@ -17,6 +17,9 @@ header{
             position: relative;
             width: 33.333%;
             overflow: hidden;
+            &:hover p{
+                animation-play-state: paused;
+            }
             p{
                 @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
                 position: absolute;
