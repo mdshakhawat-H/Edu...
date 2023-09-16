@@ -1667,6 +1667,7 @@
     }
     #admissioninfo .info nav .nav button {
         font-size: 12px;
+        width: 100%;
     }
     #admissioninfo .info #nav-tabContent .tab-pane ul li p {
         font-size: 12px;
@@ -1686,9 +1687,289 @@
         font-weight: 600;
         font-size: 12px;
     }
+    #admissioninfo .info nav .nav {
+        row-gap: 5px;
+    }
  }
-@media (min-width: 576px) and (max-width: 767.98px) {  }
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
-@media (min-width: 1200px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #admissioninfo {
+        padding: 55px 0;
+    }
+    #admissioninfo .addinfo_head h2 {
+        font-weight: 600;
+        font-size: 25px;
+        padding-bottom: 3px;
+    }
+    #admissioninfo .addinfo_head h2::after {
+        height: 1.5px;
+    }
+    #admissioninfo .info {
+        margin-top: 30px;
+    }
+    #admissioninfo .info nav .nav button {
+        font-size: 15px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane ul li p {
+        font-size: 15px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane .procedure_txt {
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane h3 {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane .procedure_txt span {
+        margin-top: 30px;
+    }
+ }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #admissioninfo {
+        padding: 70px 0;
+    }
+    #admissioninfo .addinfo_head h2 {
+        font-weight: 600;
+        font-size: 30px;
+        padding-bottom: 3px;
+    }
+    #admissioninfo .addinfo_head h2::after {
+        height: 2px;
+    }
+    #admissioninfo .info {
+        margin-top: 40px;
+    }
+    #admissioninfo .info nav .nav button {
+        font-size: 18px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane ul li p {
+        font-size: 18px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane .procedure_txt {
+        font-size: 18px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane h3 {
+        font-size: 18px;
+    }
+ }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #admissioninfo .addinfo_head h2 {
+        font-size: 35px;
+        padding-bottom: 5px;
+    }
+    #admissioninfo .info nav .nav button {
+        font-size: 20px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane ul li p {
+        font-size: 20px;
+    }
+    #admissioninfo .info #nav-tabContent .tab-pane .procedure_txt ,  #admissioninfo .info #nav-tabContent .tab-pane h3 {
+        font-size: 20px;
+    }
+ }
 /* =================== ADMISSIONINFO PAGE REPONSIVE ENDED =================== */
+/* =================== FACULTIES PAGE REPONSIVE START =================== */
+@media (max-width: 575.98px){
+    #faculty {
+        padding: 40px 0;
+    }
+    #faculty .faculty_head h2 {
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+    #faculty .faculty_head h2::after {
+        height: 1px;
+    }
+    #faculty .faculties {
+        margin-top: 60px;
+    }
+    #faculty .faculties .slick-arrow {
+        font-size: 12px;
+        width: 23%;
+        padding: 2px 10px;
+        top: -10% !important;
+    }
+    #faculty .faculties .slick-next {
+        left: 70%;
+    }
+    #faculty .faculties .slick-prev {
+        left: 6%;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h3 {
+        font-size: 15px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h4 {
+        font-size: 13px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h5 {
+        font-size: 11px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt a {
+        font-size: 12px;
+        padding: 5px 25px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #faculty {
+        padding: 55px 0;
+    }
+    #faculty .faculty_head h2 {
+        font-weight: 600;
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+    #faculty .faculty_head h2::after {
+        height: 1.5px;
+    }
+    #faculty .faculties .slick-arrow {
+        font-size: 15px;
+        width: 20%;
+    }
+    #faculty .faculties .slick-next {
+        left: 75%;
+    }
+    #faculty .faculties .slick-prev {
+        left: 5%;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h3 {
+        font-size: 17px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h4 {
+        font-size: 17px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h5 {
+        font-size: 15px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt a {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #faculty {
+        padding: 70px 0;
+    }
+    #faculty .faculty_head h2 {
+        font-size: 30px;
+        padding-bottom: 7px;
+    }
+    #faculty .faculty_head h2::after {
+        height: 2.5px;
+    }
+    #faculty .faculties .slick-arrow {
+        font-size: 18px;
+    }
+    #faculty .faculties .slick-prev {
+        left: 3%;
+    }
+    #faculty .faculties .slick-next {
+        left: 81%;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h3 {
+        font-size: 18px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h4 {
+        font-size: 18px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h5 {
+        font-size: 18px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt a {
+        font-size: 18px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    #faculty {
+        padding: 80px 0;
+    }
+    #faculty .faculty_head h2 {
+        font-size: 35px;
+    }
+    #faculty .faculties .slick-arrow {
+        font-size: 20px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h3 {
+        font-size: 21px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h4 {
+        font-size: 22px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt h5 {
+        font-size: 20px;
+    }
+    #faculty .faculties .faculty_item .facylty_txt a {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+}
+@media (min-width: 1200px) {  }
+
+
+
+/* =================== FACULTIES PAGE REPONSIVE ENDED =================== */
+/* =================== CLUBS PAGE REPONSIVE START =================== */
+@media (max-width: 575.98px){
+    #clubs {
+        padding: 40px 0;
+    }
+    #clubs .club_head h2 {
+        font-weight: 500;
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+    #clubs .club_head h2::after {
+        height: 1px;
+    }
+    #clubs .clubs {
+        margin-top: 25px;
+    }
+    #clubs .clubs ul li .active , #clubs .clubs ul li button {
+        font-size: 12px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #clubs {
+        padding: 55px 0;
+    }
+    #clubs .club_head h2 {
+        font-weight: 600;
+        font-size: 25px;
+        padding-bottom: 4px;
+    }
+    #clubs .club_head h2::after {
+        height: 1.5px;
+    }
+    #clubs .clubs {
+        margin-top: 30px;
+    }
+    #clubs .clubs ul li .active , #clubs .clubs ul li button {
+        font-size: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #clubs {
+        padding: 70px 0;
+    }
+    #clubs .club_head h2 {
+        font-size: 35px;
+        padding-bottom: 5px;
+    }
+    #clubs .club_head h2::after {
+        height: 2px;
+    }
+    #clubs .clubs ul li .active , #clubs .clubs ul li button {
+        font-size: 18px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    #clubs {
+        padding: 80px 0;
+    }
+}
+@media (min-width: 1200px) {  }
+/* =================== CLUBS PAGE REPONSIVE ENDED =================== */
+@media (max-width: 575.98px){}
+@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px){}
+@media (min-width: 1200px) {  }
