@@ -66,6 +66,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1113,9 +1117,11 @@ nav .main_menu .log_sign a:hover::after {
 }
 #admission .admission_form form .main_form .student_name .sname_box input {
   padding: 10px;
-  border: 2px solid #052E59;
+  border: 2px solid;
+  border-color: #052E59;
   width: 100%;
   background-color: transparent;
+  font-family: "Exo 2", sans-serif;
 }
 #admission .admission_form form .main_form .student_name .sname_box label {
   font-family: "Exo 2", sans-serif;
@@ -2282,4 +2288,191 @@ nav .main_menu .log_sign a:hover::after {
   border-top-right-radius: 0;
   border-top-left-radius: 16px;
   border-bottom-right-radius: 16px;
+}
+
+#login {
+  padding: 100px 0;
+}
+#login .login_form {
+  width: 70%;
+  padding: 50px 40px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-color: rgba(201, 151, 137, 0.515);
+}
+#login .login_form ul {
+  justify-content: space-around;
+}
+#login .login_form ul li button {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#login .login_form ul li button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#login .login_form ul li button:hover {
+  color: white;
+}
+#login .login_form ul li button:hover::after {
+  width: 100%;
+}
+#login .login_form ul li .active {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #052E59;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#login .login_form ul li .active::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#login .login_form ul li .active:hover {
+  color: white;
+}
+#login .login_form ul li .active:hover::after {
+  width: 100%;
+}
+#login .login_form .tab-content .tab-pane form {
+  margin-top: 50px;
+}
+#login .login_form .tab-content .tab-pane form .signwith p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+}
+#login .login_form .tab-content .tab-pane form .signwith .signwith_icon {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#login .login_form .tab-content .tab-pane form .signwith .signwith_icon button {
+  font-size: 20px;
+  color: white;
+  transition: 0.4s;
+}
+#login .login_form .tab-content .tab-pane form .signwith .signwith_icon button:hover {
+  transform: rotate(360deg);
+  background-color: #C99789;
+}
+#login .login_form .tab-content .tab-pane form .or {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+}
+#login .login_form .tab-content .tab-pane form .sname_box {
+  width: 100%;
+  position: relative;
+}
+#login .login_form .tab-content .tab-pane form .sname_box input {
+  padding: 10px;
+  border: 2px solid;
+  border-color: #052E59;
+  width: 100%;
+  background-color: #C99789;
+  font-family: "Exo 2", sans-serif;
+}
+#login .login_form .tab-content .tab-pane form .sname_box label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #651E3E;
+  background-color: #C99789;
+  text-transform: capitalize;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  transition: 0.4s;
+}
+#login .login_form .tab-content .tab-pane form .sname_box input:focus ~ label, #login .login_form .tab-content .tab-pane form .sname_box input:valid ~ label {
+  top: -15px;
+  left: 25px;
+  color: white;
+  font-size: 18px;
+  background-color: #C99789;
+  padding: 0 5px;
+}
+#login .login_form .tab-content .tab-pane form .Remember_forget {
+  padding: 20px 0;
+  justify-content: space-around;
+}
+#login .login_form .tab-content .tab-pane form .Remember_forget .main_rem .form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#login .login_form .tab-content .tab-pane form .Remember_forget .main_rem .form-check label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+}
+#login .login_form .tab-content .tab-pane form .Remember_forget .Forgot a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+}
+#login .login_form .tab-content .tab-pane form .sign_btn {
+  text-align: center;
+}
+#login .login_form .tab-content .tab-pane form .memberQ {
+  margin-top: 20px;
+}
+#login .login_form .tab-content .tab-pane form .memberQ p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+}
+#login .login_form .tab-content .tab-pane form .memberQ p a {
+  color: white;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

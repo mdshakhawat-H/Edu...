@@ -1,0 +1,90 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#login{
+    padding: 100px 0;
+    .login_form{
+        width: 70%;
+        padding: 50px 40px;
+        border-radius: 20px;
+        margin: 0 auto;
+        background-color: rgba(201, 151, 137, 0.515);
+        ul{
+            justify-content: space-around;
+            li{
+                button{
+                    border-top-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 100% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px )
+                }
+                .active{
+                    @include btnani( $clr: $primary_color ,$bg: $secondery_color )
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                form{
+                    margin-top: 50px;
+                    .signwith{
+                        p{
+                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color)
+                        }
+                        .signwith_icon{
+                            margin-top: 10px;
+                            display: flex;
+                            justify-content: center;
+                            gap: 30px;
+                            button{
+                                font-size: 20px;
+                                color: $primary_color;
+                                transition: .4s;
+                                &:hover{
+                                    transform: rotate(360deg);
+                                    background-color: $third-color;
+                                }
+                            }
+                        }
+                    }
+                    .or{
+                        @include discription ($ff: $secondery_font , $fw: 600 , $fs: 22px , $clr: $primary_color);
+                    }
+                    .sname_box{
+                        @include formInput ($wth: 100% , $foclb: $third-color ,  $focclr: $primary_color , $inb: $third-color , $lbb: $third-color);
+                    }
+                    .Remember_forget{
+                        padding: 20px 0;
+                        justify-content: space-around;
+                        .main_rem{
+                            .form-check{
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                label{
+                                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color);
+                                }
+                            }
+                        }
+                        .Forgot{
+                            a{
+                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color);
+                            }
+                        }
+                    }
+                    .sign_btn{
+                        text-align: center;
+                    }
+                    .memberQ{
+                        margin-top: 20px;
+                        p{
+                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color);
+                            a{
+                                color: $primary_color;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
