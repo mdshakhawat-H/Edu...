@@ -1968,6 +1968,127 @@
 }
 @media (min-width: 1200px) {  }
 /* =================== CLUBS PAGE REPONSIVE ENDED =================== */
+/* =================== LOGIN PAGE REPONSIVE START =================== */
+@media (max-width: 575.98px){
+    #login {
+        padding: 40px 0;
+    }
+    #login .login_form {
+        width: 90%;
+        padding: 25px 30px;
+        border-radius: 10px;
+    }
+    #login .login_form .tab-content .tab-pane form {
+        margin-top: 15px;
+    }
+    #login .login_form ul li button , #login .login_form ul li .active {
+        font-size: 12px;
+        width: 80%;
+        padding-left: 15px;
+        padding-right: 40px;
+    }
+    #login .login_form .tab-content .tab-pane form .signwith p {
+        font-size: 14px;
+    }
+    #login .login_form .tab-content .tab-pane form .signwith .signwith_icon button {
+        font-size: 10px;
+    }
+    #login .login_form .tab-content .tab-pane form .signwith .signwith_icon {
+        margin-top: 0px;
+        gap: 0px;
+    }
+    .signwith{
+        margin-bottom: 0 !important;
+    }
+    #login .login_form .tab-content .tab-pane form .or {
+        font-size: 12px;
+    }
+    #login .login_form .tab-content .tab-pane form .sname_box input {
+        padding: 2px ;
+    }
+    #login .login_form .tab-content .tab-pane form .sname_box label {
+        font-size: 12px;
+    }
+    #login .login_form .tab-content .tab-pane form .sname_box input:focus ~ label, #login .login_form .tab-content .tab-pane form .sname_box input:valid ~ label {
+        top: -7px;
+        left: 10px;
+        font-size: 10px;
+    }
+    #login .login_form .tab-content .tab-pane form .Remember_forget {
+        padding: 0px 0;
+        justify-content: space-between;
+    }
+    #login .login_form .tab-content .tab-pane form .Remember_forget .main_rem .form-check label , #login .login_form .tab-content .tab-pane form .Remember_forget .Forgot a {
+        font-size: 12px;
+    }
+    #login .login_form .tab-content .tab-pane form .Remember_forget .main_rem .form-check {
+        gap: 3px;
+    }
+    #login .login_form .tab-content .tab-pane form .memberQ {
+        margin-top: 0px;
+    }
+    #login .login_form .tab-content .tab-pane form .memberQ p {
+        font-size: 12px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #login .login_form ul li .active , #login .login_form ul li button {
+        font-size: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #login .login_form {
+        width: 85%;
+        padding: 35px 30px;
+    }
+    #login {
+        padding: 55px 0;
+    }
+    #login .login_form .tab-content .tab-pane form {
+        margin-top: 30px;
+    }
+    #login .login_form .tab-content .tab-pane form .signwith p {
+        font-size: 16px;
+    }
+    #login .login_form .tab-content .tab-pane form .signwith .signwith_icon {
+        margin-top: 5px;
+        gap: 15px;
+    }
+    #login .login_form .tab-content .tab-pane form .signwith .signwith_icon button {
+        font-size: 14px;
+    }
+    #login .login_form .tab-content .tab-pane form .or {
+        font-size: 16px;
+    }
+    #login .login_form .tab-content .tab-pane form .sname_box input {
+        padding: 5px;
+    }
+    #login .login_form .tab-content .tab-pane form .sname_box label {
+        font-size: 16px;
+        top: 8px;
+    }
+    #login .login_form .tab-content .tab-pane form .sname_box input:focus ~ label, #login .login_form .tab-content .tab-pane form .sname_box input:valid ~ label {
+        top: -10px;
+        left: 15px;
+        font-size: 13px;
+    }
+    #login .login_form .tab-content .tab-pane form .Remember_forget .main_rem .form-check label {
+        font-size: 16px;
+    }
+    #login .login_form .tab-content .tab-pane form .Remember_forget .Forgot a {
+        font-size: 16px;
+    }
+    #login .login_form .tab-content .tab-pane form .Remember_forget {
+        padding: 0;
+    }
+    #login .login_form .tab-content .tab-pane form .memberQ p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px){}
+@media (min-width: 1200px) {  }
+/* =================== LOGIN PAGE REPONSIVE ENDED =================== */
 @media (max-width: 575.98px){}
 @media (min-width: 576px) and (max-width: 767.98px) {}
 @media (min-width: 768px) and (max-width: 991.98px) {}
