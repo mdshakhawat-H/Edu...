@@ -70,6 +70,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -2475,4 +2479,286 @@ nav .main_menu .log_sign a:hover::after {
 #login .login_form .tab-content .tab-pane form .memberQ p a {
   color: white;
   text-decoration: underline;
+}
+
+#profile {
+  padding: 100px 0;
+}
+#profile .main_profile .nav-pills {
+  border: 3px double #052E59;
+  padding: 10px;
+  gap: 40px;
+}
+#profile .main_profile .nav-pills button {
+  text-transform: capitalize;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  border: 2px solid #052E59;
+  border-radius: 15px 0;
+}
+#profile .main_profile .nav-pills button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#profile .main_profile .nav-pills button:hover {
+  color: white;
+}
+#profile .main_profile .nav-pills button:hover::after {
+  width: 100%;
+}
+#profile .main_profile .nav-pills .active {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #052E59;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#profile .main_profile .nav-pills .active::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#profile .main_profile .nav-pills .active:hover {
+  color: white;
+}
+#profile .main_profile .nav-pills .active:hover::after {
+  width: 100%;
+}
+#profile .main_profile .tab-content .tab-pane {
+  border: 3px double #052E59;
+  padding: 10px;
+}
+#profile .main_profile .tab-content .tab-pane .profile {
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_img {
+  width: 30%;
+  border: 2px solid #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_img img, #profile .main_profile .tab-content .tab-pane .profile .profile_img input {
+  width: 100%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_img input {
+  border-top: 2px solid #052E59;
+  margin-top: 10px;
+  background-color: transparent;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_info {
+  width: 60%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_info h2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_info h2 a {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor {
+  width: 10%;
+  text-align: end;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  border: 2px solid #052E59;
+  border-radius: 15px 0;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor button:hover {
+  color: white;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor button:hover::after {
+  width: 100%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor button i {
+  transition: 0.4s;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor button:hover i {
+  transform: rotate(360deg);
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content .modal-header h3 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content .modal-header button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  border-radius: 13px 0;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content .modal-header button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content .modal-header button:hover {
+  color: white;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content .modal-header button:hover::after {
+  width: 100%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content .modal-header button:hover::after {
+  width: 0%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-body {
+  text-align: left;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-body .form-floating label {
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-body .form-floating input {
+  margin-top: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-body .form-floating span {
+  text-transform: capitalize;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-footer button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  border-radius: 15px 0;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-footer button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-footer button:hover {
+  color: white;
+}
+#profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-footer button:hover::after {
+  width: 100%;
+}
+
+.dot {
+  background-repeat: repeat;
+  background-color: transparent;
+  min-height: 50vh;
+}
+.dot--1 {
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent, transparent 20%, #fff 20%, #fff 80%, transparent 90%), linear-gradient(to right, transparent, transparent 20%, #fff 20%, #fff 80%, transparent 80%), linear-gradient(to right, rgba(238, 238, 238, 0.521), rgba(238, 238, 238, 0.498) 20%, #fff 20%, #fff 80%, rgba(237, 237, 237, 0.498) 80%);
+  background-size: 10px 10px;
 }/*# sourceMappingURL=style.css.map */

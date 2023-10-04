@@ -1,0 +1,130 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#profile{
+    padding: 100px 0;
+    .main_profile{
+        .nav-pills{
+            border: 3px double $secondery_color;
+            padding: 10px;
+            gap: 40px;
+            button{
+                text-transform: capitalize;
+                @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 100% , $wth: 5% , $bg: transparent , $ptb: 5px , $plr: 50px );
+                border: 2px solid $secondery_color;
+                border-radius: 15px 0;
+            }
+            .active{
+                @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color , $width: 100% , $wth: 5% , $bg: $secondery_color , $ptb: 5px , $plr: 50px );
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                border: 3px double $secondery_color;
+                padding: 10px;
+                .profile{
+                    display: flex;
+                    gap: 50px;
+                    position: relative;
+                    .profile_img{
+                        width: 30%;
+                        border: 2px solid $secondery_color;
+                        img , input{
+                            width: 100%;
+                        }
+                        input{
+                            border-top: 2px solid $secondery_color;
+                            margin-top: 10px;
+                            background-color: transparent;
+                        }
+                    }
+                    .profile_info{
+                        width: 60%;
+                        h2{
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            a{
+                                @include head ($ff: $primary_sont , $fw: 700 , $fs: 48px , $clr: $secondery_color );
+                            }
+                        }
+                    }
+                    .profile_editor{
+                        width: 10%;
+                        text-align: end;
+                        button{
+                            @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 100% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 10px );
+                            border: 2px solid $secondery_color;
+                            border-radius: 15px 0;
+                            i{
+                                transition: .4s;
+
+                            }
+                            &:hover i{
+                                transform: rotate(360deg);
+                            }
+                        }
+                        .modal{
+                            .modal-dialog{
+                                .modal-content{
+                                    .modal-header{
+                                        h3{
+                                            @include  discription ($ff: $secondery_font , $fw: 700 , $fs: 30px , $clr: $secondery_color);
+                                        }
+                                        button{
+                                            @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 10% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 20px );
+                                            border-radius: 13px 0;
+                                            &:hover::after{
+                                                width: 0%;
+                                            }
+                                        }
+                                    }
+                                    form{
+                                        .modal-body{
+                                            text-align: left;
+                                            .form-floating{
+                                                label{
+                                                    margin-top: 40px;
+                                                    text-transform: capitalize;
+                                                }
+                                                input{
+                                                    margin-top: 10px;
+                                                    @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                                }
+                                                span{
+                                                    text-transform: capitalize;
+                                                    @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 20px , $clr: $secondery_color);
+                                                }
+                                            }
+                                        }
+                                        .modal-footer{
+                                            button{
+                                                @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 50% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 30px );
+                                                border-radius: 15px 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.dot{
+	background-repeat: repeat;
+	background-color: transparent;
+	min-height: 50vh;
+	
+	&--1{
+		position: relative;
+		background-image: linear-gradient(to bottom, transparent, transparent 20%, #fff 20%, #fff 80%, transparent 90%),
+			linear-gradient(to right, transparent, transparent 20%, #fff 20%, #fff 80%, transparent 80%),
+			linear-gradient(to right, rgba(238, 238, 238, 0.521), rgba(238, 238, 238, 0.498) 20%, #fff 20%, #fff 80%, rgba(237, 237, 237, 0.498) 80%);
+		background-size: 10px 10px;
+	}
+}
+
+
+

@@ -159,3 +159,6 @@ const image = document.querySelector(".stu_pic")
     image.src = URL.createObjectURL(input.files[0]);
   });
 // ================ ADMISSION FORM PART ENDED ===============
+
+
+
