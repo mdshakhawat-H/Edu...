@@ -19,9 +19,9 @@
         }
         .tab-content{
             .tab-pane{
-                border: 3px double $secondery_color;
-                padding: 10px;
                 .profile{
+                    border: 3px double $secondery_color;
+                    padding: 10px;
                     display: flex;
                     gap: 50px;
                     position: relative;
@@ -45,6 +45,29 @@
                             gap: 20px;
                             a{
                                 @include head ($ff: $primary_sont , $fw: 700 , $fs: 48px , $clr: $secondery_color );
+                            }
+                        }
+                        ul{
+                            margin-top: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            li{
+                                padding: 7px 0;
+                                width: fit-content;
+                                &:hover{
+                                    a{
+                                        i{
+                                            transform: rotate(360deg);
+                                        }
+                                    }
+                                }
+                                a{
+                                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                    i{
+                                        transition: 2s;
+                                    }
+                                }
                             }
                         }
                     }
@@ -100,6 +123,46 @@
                                             button{
                                                 @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 50% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 30px );
                                                 border-radius: 15px 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .parent_profile{
+                    margin-top: 30px;
+                    border: 3px double $secondery_color;
+                    padding: 10px;
+                    form{
+                        .pp_item{
+                            display: flex;
+                            justify-content: space-between;
+                            span{
+                                width: 48%;
+                            }
+                            .pp_editor{
+                                @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 20% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 10px );
+                                border: 2px solid $secondery_color;
+                                border-radius: 15px 0;
+                                i{
+                                    transition: 1s;
+    
+                                }
+                                &:hover i{
+                                    transform: rotate(360deg);
+                                }
+                            }
+                            .modal{
+                                .modal-dialog{
+                                    .modal-content{
+                                        .modal-body{
+                                            .pp_update_item{
+                                                span{
+                                                    display: block;
+                                                    width: 100%;
+                                                }
                                             }
                                         }
                                     }

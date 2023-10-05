@@ -124,6 +124,10 @@
                               </div>
                               <div class="profile_info">
                                 <h2><a href="#">Your Name Here</a></h2>
+                                <ul>
+                                  <li><a href="tel:1234567890"><i class="fa-solid fa-phone-volume"></i> 1234567890</a></li>
+                                  <li><a href="mailto:example@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i> example@gmail.com</a></li>
+                                </ul>
                               </div>
                               <div class="profile_editor">
                                 <!-- Button trigger modal -->
@@ -168,6 +172,117 @@
                                   </div>
                                 </div>
                               </div>
+                            </div>
+                            <div class="parent_profile">
+                              <form action="#">
+                                <div class="pp_item mb-3">
+                                  <!-- Button trigger modal -->
+                                  <button type="button" class="btn btn-primary pp_editor" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-user-pen"></i></button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h3 class="modal-title fs-5" id="staticBackdropLabel">Information Update Request</h3>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="pp_update_item mb-3">
+                                            <span class="mb-3">
+                                              <label for="fatheupname" class="form-label">Father's Name Update</label>
+                                              <input type="text" class="form-control" id="fatherupname" placeholder="Father's Update Name">
+                                            </span>
+                                            <span class="mb-3">
+                                              <label for="motherupname" class="form-label">Mother's Name Update</label>
+                                              <input type="text" class="form-control" id="motherupname" placeholder="Father's Update Name">
+                                            </span>
+                                          </div>
+                                          <div class="pp_update_item mb-3">
+                                            <span class="mb-3">
+                                              <label for="parent_up_contact" class="form-label">Parent's Contact Update</label>
+                                              <input type="number" class="form-control" id="parent_up_contact" placeholder="Parent's Update Number">
+                                            </span>
+                                            <span class="mb-3">
+                                              <label for="upnid" class="form-label">Update NID No</label>
+                                              <input type="number" class="form-control" id="upnid" placeholder="Update ID No">
+                                            </span>
+                                          </div>
+                                          <div class="pp_update_item mb-3">
+                                            <span class="mb-3">
+                                              <label for="upbirth" class="form-label">Update Birth Reg No</label>
+                                              <input type="number" class="form-control" id="upbirth" placeholder="Update Birth Reg No">
+                                            </span>
+                                            <span class="mb-3">
+                                              <label for="upcntc" class="form-label">Your Contact Update</label>
+                                              <input type="number" class="form-control" id="upcntc" placeholder="Your Update Number">
+                                            </span>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                          <button type="Submit" class="btn btn-primary">Submit Update</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pp_item mb-3">
+                                  <span class="mb-3">
+                                    <label for="fathername" class="form-label">Father's Name</label>
+                                    <input type="text" class="form-control" id="fathername" placeholder="Father's Name">
+                                  </span>
+                                  <span class="mb-3">
+                                    <label for="mothername" class="form-label">Mother's Name</label>
+                                    <input type="text" class="form-control" id="mothername" placeholder="Father's Name">
+                                  </span>
+                                </div>
+                                <div class="pp_item mb-3">
+                                  <span class="mb-3">
+                                    <label for="parent_contact" class="form-label">Parent's Contact</label>
+                                    <input type="number" class="form-control" id="parent_contact" placeholder="Parent's Number">
+                                  </span>
+                                  <span class="mb-3">
+                                    <label for="nid" class="form-label">Your NID No</label>
+                                    <input type="number" class="form-control" id="nid" placeholder="National ID No">
+                                  </span>
+                                </div>
+                                <div class="pp_item mb-3">
+                                  <span class="mb-3">
+                                    <label for="birth" class="form-label">Your Birth Reg No</label>
+                                    <input type="number" class="form-control" id="birth" placeholder="Your Birth Reg No">
+                                  </span>
+                                  <span class="mb-3">
+                                    <label for="cntc" class="form-label">Your Contact</label>
+                                    <input type="number" class="form-control" id="cntc" placeholder="Your Number">
+                                  </span>
+                                </div>
+                                <div class="pp_item mb-3">
+                                  <span class="mb-3">
+                                    <label for="gender" class="form-label">Your Gender</label>
+                                    <select class="form-select" id="gender" aria-label="Default select example">
+                                      <option selected disabled>Enter Your Sex</option>
+                                      <option value="1">Male</option>
+                                      <option value="2">Female</option>
+                                      <option value="3">Other</option>
+                                    </select>
+                                  </span>
+                                  <span class="mb-3">
+                                    <label for="blod_group" class="form-label">Blod Group</label>
+                                    <select class="form-select" id="blod_group" aria-label="Default select example">
+                                      <option selected disabled>Enter Your Blod Group</option>
+                                      <option value="2">A+</option>
+                                      <option value="1">A-</option>
+                                      <option value="3">B+</option>
+                                      <option value="3">B-</option>
+                                      <option value="3">AB+</option>
+                                      <option value="3">AB-</option>
+                                      <option value="3">O+</option>
+                                      <option value="3">O-</option>
+                                    </select>
+                                  </span>
+                                </div>
+                              </form>
                             </div>
                           </div>
                           <div class="tab-pane fade" id="v-pills-batch" role="tabpanel" aria-labelledby="v-pills-batch-tab" tabindex="0">...</div>
