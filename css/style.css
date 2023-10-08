@@ -2564,6 +2564,9 @@ nav .main_menu .log_sign a:hover::after {
 #profile .main_profile .nav-pills .active:hover::after {
   width: 100%;
 }
+#profile .main_profile .tab-content {
+  width: 100%;
+}
 #profile .main_profile .tab-content .tab-pane .profile {
   border: 3px double #052E59;
   padding: 10px;
@@ -2772,6 +2775,276 @@ nav .main_menu .log_sign a:hover::after {
 #profile .main_profile .tab-content .tab-pane .profile .profile_editor .modal .modal-dialog .modal-content form .modal-footer button:hover::after {
   width: 100%;
 }
+#profile .main_profile .tab-content .tab-pane .profile .pro_title {
+  padding-bottom: 30px;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_title h3 {
+  text-transform: capitalize;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #052E59;
+  padding-bottom: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_title h3::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: #052E59;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main {
+  display: flex;
+  justify-content: space-between;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform {
+  width: 48%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .mdl_cls_txt {
+  width: 90%;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .mdl_cls_txt p {
+  padding-bottom: 0;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .progress_text {
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .progress_bar {
+  width: 90%;
+  height: 15px;
+  background-color: #C99789;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .progress_bar .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: green;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .progress_bar .bar_present {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: green;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .progress_bar .bar_absent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: green;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .progress_bar .bar_assignment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: green;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting {
+  width: 48%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line {
+  display: flex;
+  justify-content: space-between;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item {
+  padding: 10px;
+  border: 2px double #052E59;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item h4 {
+  text-transform: capitalize;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item p {
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .payment_summary {
+  width: 100%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line {
+  display: flex;
+  justify-content: space-between;
+}
+#profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem {
+  padding: 10px;
+  border: 2px double #052E59;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+#profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem h4 {
+  text-transform: capitalize;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem p {
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings {
+  padding: 50px 0;
+  margin: 0 auto;
+  width: 70%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 20px;
+  border-radius: 15px;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .form-group label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .form-group .input-group {
+  align-items: center;
+  border: 2px solid #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .form-group .input-group input {
+  width: 80%;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .form-group .input-group .input-group-addon {
+  padding: 0 20px;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .button {
+  text-align: right;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .button button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #052E59;
+  width: 40%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .button button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .button button:hover {
+  color: white;
+}
+#profile .main_profile .tab-content .tab-pane .profile .settings form .button button:hover::after {
+  width: 100%;
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .batch h4 a {
+  text-transform: capitalize;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #052E59;
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .payments_detailes form {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #052E59;
+  display: flex;
+  flex-direction: column;
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .payments_detailes form input {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #052E59;
+  border: none;
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .pay_recipt button {
+  padding: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  transition: 0.4s;
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .pay_recipt button i {
+  transition: 0.4s;
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .pay_recipt button:hover {
+  transform: rotate(360deg);
+}
+#profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .pay_recipt button:hover i {
+  transform: rotate(360deg);
+}
 #profile .main_profile .tab-content .tab-pane .parent_profile {
   margin-top: 30px;
   border: 3px double #052E59;
@@ -2828,9 +3101,8 @@ nav .main_menu .log_sign a:hover::after {
 #profile .main_profile .tab-content .tab-pane .parent_profile form .pp_item .pp_editor:hover i {
   transform: rotate(360deg);
 }
-#profile .main_profile .tab-content .tab-pane .parent_profile form .pp_item .modal .modal-dialog .modal-content .modal-body .pp_update_item span {
+#profile .main_profile .tab-content .tab-pane .batch_profile {
   display: block;
-  width: 100%;
 }
 
 .dot {

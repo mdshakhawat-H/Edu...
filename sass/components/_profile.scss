@@ -18,6 +18,7 @@
             }
         }
         .tab-content{
+            width: 100%;
             .tab-pane{
                 .profile{
                     border: 3px double $secondery_color;
@@ -130,6 +131,225 @@
                             }
                         }
                     }
+                    .pro_title{
+                        padding-bottom: 30px;
+                        h3{
+                            text-transform: capitalize;
+                            @include head ($ff: $primary_sont , $fw: 600 , $fs: 30px , $clr: $secondery_color );
+                            padding-bottom: 10px;
+                            width: fit-content;
+                            position: relative;
+                            &::after{
+                                content: '';
+                                width: 60%;
+                                height: 3px;
+                                background-color: $secondery_color;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                    .pro_main{
+                        display: flex;
+                        justify-content: space-between;
+                        .perform{
+                            width: 48%;
+                            p{
+                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                text-transform: capitalize;
+                                padding-bottom: 15px;
+                            }
+                            .perform_item{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                                .mplt_mdl_cls{
+                                    .mdl_cls_txt{
+                                        width: 90%;
+                                        padding-bottom: 5px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        p{
+                                            padding-bottom: 0;
+                                            @include discription ($ff: $secondery_font , $fw: 400 , $fs: 14px , $clr: $secondery_color);
+                                        }
+                                    }
+                                    .progress_text {
+                                        color: $secondery_color; 
+                                       }
+                                      .progress_bar {
+                                       width: 90%;
+                                       height: 15px;
+                                       background-color: $third-color;
+                                       border-radius: 5px;
+                                       position: relative;
+                                       overflow: hidden;
+                                       
+                                       .bar {
+                                         position: absolute;
+                                         top: 0;
+                                         left: 0;
+                                         height: 100%;
+                                         background-color: green;
+                                       }
+                                       .bar_present {
+                                         position: absolute;
+                                         top: 0;
+                                         left: 0;
+                                         height: 100%;
+                                         background-color: green;
+                                       }
+                                       .bar_absent {
+                                         position: absolute;
+                                         top: 0;
+                                         left: 0;
+                                         height: 100%;
+                                         background-color: green;
+                                       }
+                                       .bar_assignment {
+                                         position: absolute;
+                                         top: 0;
+                                         left: 0;
+                                         height: 100%;
+                                         background-color: green;
+                                       }
+                                     }
+                                }
+                            }
+                        }
+                        .perform_counting{
+                            width: 48%;
+                            .perform_item{
+                                .item_line{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .main_item{
+                                        padding: 10px;
+                                        border: 2px double $secondery_color;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        gap: 20px;
+
+                                        h4{
+                                            text-transform: capitalize;
+                                            @include head ($ff: $primary_sont , $fw: 400 , $fs: 22px , $clr: $secondery_color );
+                                        }
+                                        p{
+                                            padding: 0;
+                                            @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 16px , $clr: $secondery_color);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .payment_summary{
+                        width: 100%;
+                        .pay_line{
+                            display: flex;
+                            justify-content: space-between;
+                            .payitem{
+                                padding: 10px;
+                                border: 2px double $secondery_color;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                align-items: center;
+                                gap: 20px;
+                                h4{
+                                     text-transform: capitalize;
+                                     @include head ($ff: $primary_sont , $fw: 400 , $fs: 22px , $clr: $secondery_color );
+                                }
+                                p{
+                                     padding: 0;
+                                     @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 16px , $clr: $secondery_color);
+                                    }
+                            }
+                        }
+                    }
+                    .settings{
+                        padding: 50px 0;
+                        margin: 0 auto;
+                        width: 70%;
+                        form{
+                            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                            padding: 20px;
+                            border-radius: 15px;
+                            .form-group{
+                                label{
+                                    @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 20px , $clr: $secondery_color);
+                                }
+                                .input-group{
+                                    align-items: center;
+                                    border: 2px solid $secondery_color;
+                                    input{
+                                        width: 80%;
+                                    }
+                                    .input-group-addon{
+                                        padding: 0 20px;
+                                    }
+                                }
+                            }
+                            .button{
+                                text-align: right;
+                                button{
+                                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 20px , $clr: $secondery_color , $width: 40% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 20px );
+                                }
+                            }
+                        }
+                    }
+                }
+                .pay_detailes{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .pay_month{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 10px 0;
+                        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                        .batch{
+                            h4{
+                                a{
+                                    text-transform: capitalize;
+                                    @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 18px , $clr: $secondery_color);
+                                }
+                            }
+                        }
+                        .payments_detailes{
+                            form{
+                                @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 18px , $clr: $secondery_color);
+                                display: flex;
+                                flex-direction: column;
+                                input{
+                                    @include  discription ($ff: $secondery_font , $fw: 400 , $fs: 18px , $clr: $secondery_color);
+                                    border: none;
+                                }
+                            }
+                        }
+                        .pay_recipt{
+                            button{
+                                padding: 10px;
+                                border: none;
+                                background-color: green;
+                                color: $primary_color;
+                                transition: .4s;
+                                i{
+                                    transition: .4s;
+                                }
+                                &:hover{
+                                    transform: rotate(360deg);
+                                }
+                                &:hover i{
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        }
+                    }
                 }
                 .parent_profile{
                     margin-top: 30px;
@@ -154,22 +374,11 @@
                                     transform: rotate(360deg);
                                 }
                             }
-                            .modal{
-                                .modal-dialog{
-                                    .modal-content{
-                                        .modal-body{
-                                            .pp_update_item{
-                                                span{
-                                                    display: block;
-                                                    width: 100%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
                         }
                     }
+                }
+                .batch_profile{
+                    display: block;
                 }
             }
         }

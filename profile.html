@@ -116,7 +116,7 @@
                           <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
                         </div>
                         <div class="tab-content" id="v-pills-tabContent">
-                          <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                          <div class="tab-pane fade show active " id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                             <div class="profile">
                               <div class="profile_img">
                                 <img class="stu_pic" src="images/user.png" alt="user">
@@ -285,9 +285,197 @@
                               </form>
                             </div>
                           </div>
-                          <div class="tab-pane fade" id="v-pills-batch" role="tabpanel" aria-labelledby="v-pills-batch-tab" tabindex="0">...</div>
-                          <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab" tabindex="0">...</div>
-                          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                          <div class="tab-pane fade " id="v-pills-batch" role="tabpanel" aria-labelledby="v-pills-batch-tab" tabindex="0">
+                            <div class="profile batch_profile">
+                              <div class="pro_title"><h3>batch and report</h3></div>
+                              <div class="pro_main">
+                                <div class="perform">
+                                  <p>summary in percentage :</p>
+                                  <div class="perform_item">
+                                    <div class="mplt_mdl_cls">
+                                      <div class="mdl_cls_txt"><p>complete module class :</p><p class="progress_text"></p></div>
+                                      <div class="progress_bar">
+                                          <div class="bar"></div>
+                                      </div>
+                                    </div>
+                                    <div class="mplt_mdl_cls">
+                                      <div class="mdl_cls_txt"><p>total present class :</p><p class="progress_present_txt"></p></div>
+                                      <div class="progress_bar">
+                                          <div class="bar_present"></div>
+                                      </div>
+                                    </div>
+                                    <div class="mplt_mdl_cls">
+                                      <div class="mdl_cls_txt"><p>total absent class :</p><p class="progress_absent_txt"></p></div>
+                                      <div class="progress_bar">
+                                          <div class="bar_absent"></div>
+                                      </div>
+                                    </div>
+                                    <div class="mplt_mdl_cls">
+                                      <div class="mdl_cls_txt"><p>total  Assignments/HW :</p><p class="progress_assignment_txt"></p></div>
+                                      <div class="progress_bar">
+                                          <div class="bar_assignment"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="perform perform_counting">
+                                  <p>summary in count :</p>
+                                  <div class="perform_item">
+                                    <div class="item_line">
+                                      <div class="main_item">
+                                        <h4>module class</h4>
+                                        <p><span class="count">294</span>/300</p>
+                                      </div>
+                                      <div class="main_item">
+                                        <h4>present class</h4>
+                                        <p><span class="count">240</span>/300</p>
+                                      </div>
+                                    </div>
+                                    <div class="item_line">
+                                      <div class="main_item">
+                                        <h4>absent class</h4>
+                                        <p><span class="count">60</span>/300</p>
+                                      </div>
+                                      <div class="main_item">
+                                        <h4>Assignments</h4>
+                                        <p><span class="count">180</span>/300</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade " id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab" tabindex="0">
+                            <div class="profile">
+                              <div class="payment_summary">
+                                <div class="pay_line">
+                                  <div class="payitem">
+                                    <h4>total admission</h4>
+                                    <p class="count">1</p>
+                                  </div>
+                                  <div class="payitem">
+                                    <h4>total payment</h4>
+                                    <p> <span class="count">30000</span>|12 month</p>
+                                  </div>
+                                  <div class="payitem">
+                                    <h4>total paid</h4>
+                                    <p> <span class="count">30000</span>|12 month</p>
+                                  </div>
+                                  <div class="payitem">
+                                    <h4>total due</h4>
+                                    <p> <span class="count">300</span>|12 month</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="parent_profile pay_detailes">
+                              <div class="pay_month">
+                                <div class="batch"><h4><a href="#">batch name</a></h4></div>
+                                <div class="payments_detailes">
+                                  <form action="#">
+                                    <label for="invdate">invoice date : <input type="date" id="invdate"></label>
+                                    <label for="paydate">invoice date : <input type="date" id="paydate"></label>
+                                    <label for="trxID">transection ID : <input type="text" id="trxID"></label>
+                                    <label for="paystatus">Payment status : <button type="button"></button></label>
+                                  </form>
+                                </div>
+                                <div class="payments_detailes pay_amounts">
+                                  <form action="#">
+                                    <label for="invdate">invoice date : <input type="date" id="invdate"></label>
+                                    <label for="paydate">invoice date : <input type="date" id="paydate"></label>
+                                    <label for="trxID">transection ID : <input type="text" id="trxID"></label>
+                                    <label for="paystatus">Payment status : <button type="button"></button></label>
+                                  </form>
+                                </div>
+                                <div class="pay_recipt">
+                                  <button type="button"><i class="fa-solid fa-copy"></i></button>
+                                </div>
+                              </div>
+                              <div class="pay_month">
+                                <div class="batch"><h4><a href="#">batch name</a></h4></div>
+                                <div class="payments_detailes">
+                                  <form action="#">
+                                    <label for="invdate">invoice date : <input type="date" id="invdate"></label>
+                                    <label for="paydate">invoice date : <input type="date" id="paydate"></label>
+                                    <label for="trxID">transection ID : <input type="text" id="trxID"></label>
+                                    <label for="paystatus">Payment status : <button type="button"></button></label>
+                                  </form>
+                                </div>
+                                <div class="payments_detailes pay_amounts">
+                                  <form action="#">
+                                    <label for="invdate">invoice date : <input type="date" id="invdate"></label>
+                                    <label for="paydate">invoice date : <input type="date" id="paydate"></label>
+                                    <label for="trxID">transection ID : <input type="text" id="trxID"></label>
+                                    <label for="paystatus">Payment status : <button type="button"></button></label>
+                                  </form>
+                                </div>
+                                <div class="pay_recipt">
+                                  <button type="button"><i class="fa-solid fa-copy"></i></button>
+                                </div>
+                              </div>
+                              <div class="pay_month">
+                                <div class="batch"><h4><a href="#">batch name</a></h4></div>
+                                <div class="payments_detailes">
+                                  <form action="#">
+                                    <label for="invdate">invoice date : <input type="date" id="invdate"></label>
+                                    <label for="paydate">invoice date : <input type="date" id="paydate"></label>
+                                    <label for="trxID">transection ID : <input type="text" id="trxID"></label>
+                                    <label for="paystatus">Payment status : <button type="button"></button></label>
+                                  </form>
+                                </div>
+                                <div class="payments_detailes pay_amounts">
+                                  <form action="#">
+                                    <label for="invdate">invoice date : <input type="date" id="invdate"></label>
+                                    <label for="paydate">invoice date : <input type="date" id="paydate"></label>
+                                    <label for="trxID">transection ID : <input type="text" id="trxID"></label>
+                                    <label for="paystatus">Payment status : <button type="button"></button></label>
+                                  </form>
+                                </div>
+                                <div class="pay_recipt">
+                                  <button type="button"><i class="fa-solid fa-copy"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade " id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <div class="profile">
+                              <div class="settings">
+                                <form action="#">
+                                  <div class="form-group mb-3">
+                                    <label>Old Password</label>
+                                    <div class="input-group" id="show_hide_password">
+                                      <input class="form-control" type="password">
+                                      <div class="input-group-addon">
+                                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group mb-3">
+                                    <label>New Password</label>
+                                    <div class="input-group" id="show_hide_password_new">
+                                      <input class="form-control" type="password">
+                                      <div class="input-group-addon">
+                                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group mb-3">
+                                    <label>Confirm Password</label>
+                                    <div class="input-group" id="show_hide_password_confirm">
+                                      <input class="form-control" type="password">
+                                      <div class="input-group-addon">
+                                        <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="button">
+                                    <button type="submit">change password</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                 </div>

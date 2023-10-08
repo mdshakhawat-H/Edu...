@@ -159,6 +159,117 @@ const image = document.querySelector(".stu_pic")
     image.src = URL.createObjectURL(input.files[0]);
   });
 // ================ ADMISSION FORM PART ENDED ===============
+// ================  PROFILE PART START ===============
+// complete module class start
+console.clear();
 
+let mdltxt = 0
 
+let timer = setInterval(function() {
+  mdltxt += 1
+  $('.progress_text').text(`${mdltxt} %`)
+  $('.bar').css('width', `${mdltxt}%`)
+  
+  if(mdltxt >= 98) {
+    clearInterval(timer)
+  }
+}, 30)
+// complete module class end
+// total present class start
+console.clear();
 
+let prsnt = 0
+
+let time = setInterval(function() {
+  prsnt += 1
+  $('.progress_present_txt').text(`${prsnt} %`)
+  $('.bar_present').css('width', `${prsnt}%`)
+  
+  if(prsnt >= 80) {
+    clearInterval(time)
+  }
+}, 30)
+// total present class end
+// total absent class start
+console.clear();
+
+let absnt = 0
+
+let abtimer = setInterval(function() {
+  absnt += 1
+  $('.progress_absent_txt').text(`${absnt} %`)
+  $('.bar_absent').css('width', `${absnt}%`)
+  
+  if(absnt >= 20) {
+    clearInterval(abtimer)
+  }
+}, 30)
+// total absent class end
+// total assignment start
+console.clear();
+
+let asnmnt = 0
+
+let asnmntime = setInterval(function() {
+  asnmnt += 1
+  $('.progress_assignment_txt').text(`${asnmnt} %`)
+  $('.bar_assignment').css('width', `${asnmnt}%`)
+  
+  if(asnmnt >= 60) {
+    clearInterval(asnmntime)
+  }
+}, 30)
+
+// total assignment end
+
+// setting part start
+// old password start
+$(document).ready(function() {
+  $("#show_hide_password a").on('click', function(event) {
+    event.preventDefault();
+      if($('#show_hide_password input').attr("type") == "text"){
+        $('#show_hide_password input').attr('type', 'password');
+        $('#show_hide_password i').addClass( "fa-eye-slash" );
+        $('#show_hide_password i').removeClass( "fa-eye" );
+      }else if($('#show_hide_password input').attr("type") == "password"){
+        $('#show_hide_password input').attr('type', 'text');
+        $('#show_hide_password i').removeClass( "fa-eye-slash" );
+        $('#show_hide_password i').addClass( "fa-eye" );
+      }
+    });
+  });
+  // old password end
+// new password start
+$(document).ready(function() {
+  $("#show_hide_password_new a").on('click', function(event) {
+    event.preventDefault();
+    if($('#show_hide_password_new input').attr("type") == "text"){
+      $('#show_hide_password_new input').attr('type', 'password');
+          $('#show_hide_password_new i').addClass( "fa-eye-slash" );
+          $('#show_hide_password_new i').removeClass( "fa-eye" );
+      }else if($('#show_hide_password input').attr("type") == "password"){
+          $('#show_hide_password_new input').attr('type', 'text');
+          $('#show_hide_password_new i').removeClass( "fa-eye-slash" );
+          $('#show_hide_password_new i').addClass( "fa-eye" );
+      }
+    });
+  });
+  // new password end
+  // confirm password start
+  $(document).ready(function() {
+    $("#show_hide_password_confirm a").on('click', function(event) {
+      event.preventDefault();
+      if($('#show_hide_password_confirm input').attr("type") == "text"){
+        $('#show_hide_password_confirm input').attr('type', 'password');
+            $('#show_hide_password_confirm i').addClass( "fa-eye-slash" );
+            $('#show_hide_password_confirm i').removeClass( "fa-eye" );
+        }else if($('#show_hide_password input').attr("type") == "password"){
+            $('#show_hide_password_confirm input').attr('type', 'text');
+            $('#show_hide_password_confirm i').removeClass( "fa-eye-slash" );
+            $('#show_hide_password_confirm i').addClass( "fa-eye" );
+        }
+      });
+    });
+  // confirm password end
+  // setting part end
+// ================  PROFILE PART ENDED ===============
