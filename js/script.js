@@ -273,3 +273,4 @@ $(document).ready(function() {
   // confirm password end
   // setting part end
 // ================  PROFILE PART ENDED ===============
+

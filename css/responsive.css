@@ -2089,6 +2089,169 @@
 @media (min-width: 992px) and (max-width: 1199.98px){}
 @media (min-width: 1200px) {  }
 /* =================== LOGIN PAGE REPONSIVE ENDED =================== */
+/* =================== PROFILE PAGE REPONSIVE STRAT =================== */
+@media (max-width: 575.98px){
+    #profile {
+        padding: 40px 0;
+    }
+    #profile .main_profile{
+        display: block !important;
+    }
+    #profile .main_profile .nav-pills {
+        border: 1px double #052E59;
+        padding: 5px;
+        gap: 10px;
+        margin: 0 !important; 
+        flex-direction: row !important;
+    }
+    #profile .main_profile .nav-pills .active , #profile .main_profile .nav-pills button{
+        font-size: 12px;
+        width: 48%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #profile .main_profile .tab-content {
+        margin-top: 15px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info h2 a {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info ul {
+        margin-top: 5px;
+        gap: 0px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info ul li a {
+        font-size: 12px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile {
+        border: 1px double #052E59;
+        padding: 5px;
+        gap: 15px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info ul li {
+        padding: 0;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_editor button {
+        font-size: 10px;
+        padding: 5px;
+        border: 1px solid #052E59;
+        border-radius: 5px 0;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_img input {
+        border-top: 1px solid #052E59;
+        font-size: 10px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_img {
+        border: 1px solid #052E59;
+    }
+    #profile .main_profile .tab-content .tab-pane .parent_profile {
+        margin-top: 15px;
+        border: 1px double #052E59;
+        padding: 5px;
+    }
+    #profile .main_profile .tab-content .tab-pane .parent_profile form .pp_item .pp_editor {
+        font-size: 10px;
+        border: 1px solid #052E59;
+        border-radius: 5px 0;
+    }
+    #profile .main_profile .tab-content .tab-pane .parent_profile form .pp_item {
+        display: block;
+    }
+    #profile .main_profile .tab-content .tab-pane .parent_profile form .pp_item span label , #profile .main_profile .tab-content .tab-pane .parent_profile form .pp_item span select , #profile .main_profile .tab-content .tab-pane .parent_profile form .pp_item span input , #profile .main_profile .tab-content .tab-pane .parent_profile form .pp_item span input::placeholder{
+        font-size: 12px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_title h3 {
+        font-weight: 500;
+        font-size: 15px;
+        padding-bottom: 3px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_title h3::after {
+        height: 1px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_title {
+        padding-bottom: 5px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main {
+        display: block;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform {
+        width: 100%;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform p {
+        font-size: 12px;
+        padding-bottom: 0px;
+        padding-top: 10px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .mdl_cls_txt p {
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .progress_bar {
+        height: 5px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item {
+        gap: 5px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting {
+        margin-top: 10px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item {
+        margin-top: 10px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line {
+        justify-content: space-around;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item p {
+        font-size: 10px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item h4 {
+        font-size: 12px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem p {
+        font-size: 9px;
+        text-align: center;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem {
+        border: 1px double #052E59;
+        gap: 10px;
+    }
+    #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .payments_detailes form , #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .payments_detailes form input , #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .batch h4 a{
+        font-size: 10px;
+    }
+    #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .pay_recipt button {
+        padding: 5px;
+        font-size: 7px;
+    }
+    #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month{
+        display: block;
+        text-align: center;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .settings {
+        padding: 30px 0;
+        width: 85%;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .settings form .form-group label {
+        font-size: 12px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .settings form .form-group .input-group {
+        border: 1px solid #052E59;
+        flex-wrap: nowrap;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .settings form .button button {
+        font-size: 12px;
+        width: 50%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px){}
+@media (min-width: 1200px) {  }
+/* =================== PROFILE PAGE REPONSIVE ENDED =================== */
 @media (max-width: 575.98px){}
 @media (min-width: 576px) and (max-width: 767.98px) {}
 @media (min-width: 768px) and (max-width: 991.98px) {}
