@@ -2247,7 +2247,99 @@
         width: 50%;
     }
 }
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #profile {
+        padding: 55px 0;
+    }
+    #profile .main_profile{
+        display: block !important;
+    }
+    #profile .main_profile .nav-pills {
+        border: 1.5px double #052E59;
+        padding: 7px;
+        gap: 15px;
+        margin: 0 !important; 
+        flex-direction: row !important;
+    }
+    #profile .main_profile .nav-pills .active , #profile .main_profile .nav-pills button{
+        font-size: 16px;
+        width: 48%;
+    }
+    #profile .main_profile .tab-content {
+        margin-top: 15px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info h2 a {
+        font-weight: 500;
+        font-size: 25px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info ul {
+        margin-top: 7px;
+        gap: 0px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info ul li a {
+        font-size: 16px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile {
+        border: 1.5px double #052E59;
+        padding: 7px;
+        gap: 15px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info ul li {
+        padding: 0;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_editor button {
+        font-size: 14px;
+        padding: 7px;
+        border: 1.5px solid #052E59;
+        border-radius: 7px 0;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_img input {
+        border-top: 1.5px solid #052E59;
+        font-size: 13px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_img {
+        border: 1.5px solid #052E59;
+    }
+    #profile .main_profile .tab-content .tab-pane .parent_profile {
+        border: 1.5px double #052E59;
+        padding: 7px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_title h3 {
+        font-weight: 500;
+        font-size: 22px;
+        padding-bottom: 4px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_title h3::after {
+        height: 1.5px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform p , #profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem h4 , #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item h4  {
+        font-size: 15px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .mdl_cls_txt p {
+        font-size: 11px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item p {
+        font-size: 12px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item {
+        border: 1.5px double #052E59;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem {
+        border: 1.5px double #052E59;
+        text-align: center;
+    }
+    #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .payments_detailes form , #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .payments_detailes form input , #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .batch h4 a{
+        font-size: 13px;
+    }
+    #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month .pay_recipt button {
+        padding: 7px;
+        font-size: 10px;
+    }
+    #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month{
+        display: block;
+        text-align: center;
+    }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {}
 @media (min-width: 992px) and (max-width: 1199.98px){}
 @media (min-width: 1200px) {  }
