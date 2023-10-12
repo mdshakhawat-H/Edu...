@@ -74,6 +74,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -3114,4 +3118,140 @@ nav .main_menu .log_sign a:hover::after {
   position: relative;
   background-image: linear-gradient(to bottom, transparent, transparent 20%, #fff 20%, #fff 80%, transparent 90%), linear-gradient(to right, transparent, transparent 20%, #fff 20%, #fff 80%, transparent 80%), linear-gradient(to right, rgba(238, 238, 238, 0.521), rgba(238, 238, 238, 0.498) 20%, #fff 20%, #fff 80%, rgba(237, 237, 237, 0.498) 80%);
   background-size: 10px 10px;
+}
+
+#hostel {
+  padding: 100px 0;
+}
+#hostel .hostel_head {
+  text-align: center;
+}
+#hostel .hostel_head h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #052E59;
+}
+#hostel .hostel_form {
+  margin-top: 30px;
+}
+#hostel .hostel_form form {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  border-radius: 20px;
+}
+#hostel .hostel_form form .form_head {
+  display: flex;
+  align-items: center;
+}
+#hostel .hostel_form form .form_head .form_logo {
+  width: 20%;
+}
+#hostel .hostel_form form .form_head .form_logo img {
+  width: 100%;
+}
+#hostel .hostel_form form .form_head .form_head_text {
+  width: 60%;
+  text-align: center;
+}
+#hostel .hostel_form form .form_head .form_head_text h3 a {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#hostel .hostel_form form .form_head .form_head_text p {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#hostel .hostel_form form .form_head .form_head_text span {
+  text-transform: capitalize;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #052E59;
+}
+#hostel .hostel_form form .form_head .student_img {
+  width: 20%;
+  border: 1px solid #052E59;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hostel .hostel_form form .form_head .student_img img {
+  width: 80%;
+  padding: 2px;
+}
+#hostel .hostel_form form .form_head .student_img input {
+  border-top: 1px solid #052E59;
+  width: 100%;
+}
+#hostel .hostel_form form .fast_hostel {
+  margin-top: 40px;
+  border-top: 3px double #052E59;
+  padding-top: 20px;
+}
+#hostel .hostel_form form .sec_hostel {
+  margin-top: 40px;
+  border-top: 2px dotted #052E59;
+  padding-top: 20px;
+}
+#hostel .hostel_form form .form_line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#hostel .hostel_form form .form_line .form_item {
+  width: 48%;
+}
+#hostel .hostel_form form .form_line .address {
+  display: flex;
+  flex-direction: column;
+}
+#hostel .hostel_form form .form_line .address textarea {
+  padding: 10px;
+}
+#hostel .hostel_form form .form_button {
+  justify-content: space-around;
+}
+#hostel .hostel_form form .form_button button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#hostel .hostel_form form .form_button button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#hostel .hostel_form form .form_button button:hover {
+  color: white;
+}
+#hostel .hostel_form form .form_button button:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

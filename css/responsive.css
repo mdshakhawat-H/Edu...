@@ -2340,7 +2340,64 @@
         text-align: center;
     }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #profile {
+        padding: 70px 0;
+    }
+    #profile .main_profile .nav-pills {
+        border: 2px double #052E59;
+        gap: 20px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info h2 a {
+        font-weight: 600;
+        font-size: 25px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info ul li a {
+        font-size: 17px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .profile_info ul {
+        margin-top: 15px;
+        gap: 0px;
+    }
+    #profile .main_profile .nav-pills button {
+        font-size: 17px;
+    }
+    #profile .main_profile .tab-content .tab-pane .parent_profile {
+        margin-top: 15px;
+        border: 2px double #052E59;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile {
+        border: 2px double #052E59;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_title h3 {
+        font-size: 25px;
+        padding-bottom: 2px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_title h3::after {
+        height: 2px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform p , #profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem h4 , #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item h4  {
+        font-size: 17px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .mdl_cls_txt p {
+        font-size: 12px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item {
+        text-align: center;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform_counting .perform_item .item_line .main_item p , #profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem p{
+        font-size: 14px;
+    }
+    #profile .main_profile .tab-content .tab-pane .profile .payment_summary .pay_line .payitem {
+        text-align: center;
+        gap: 15px;
+    }
+    #profile .main_profile .tab-content .tab-pane .pay_detailes .pay_month {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media (min-width: 992px) and (max-width: 1199.98px){}
 @media (min-width: 1200px) {  }
 /* =================== PROFILE PAGE REPONSIVE ENDED =================== */

@@ -1,0 +1,94 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#hostel{
+    padding: 100px 0;
+    .hostel_head{
+        text-align: center;
+        h2{
+            @include  head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+        }
+    }
+    .hostel_form{
+        margin-top: 30px;
+        form{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 20px;
+            border-radius: 20px;
+            .form_head{
+                display: flex;
+                align-items: center;
+                .form_logo{
+                    width: 20%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .form_head_text{
+                    width: 60%;
+                    text-align: center;
+                    h3{
+                        a{
+                            @include head ($ff: $primary_sont , $fw: 700 , $fs: 48px , $clr: $secondery_color );
+                            text-transform: capitalize;
+                        }
+                    }
+                    p{
+                        @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                        text-transform: capitalize;
+                    }
+                    span{
+                        text-transform: capitalize;
+                        @include discription ($ff: $secondery_font , $fw: 600 , $fs: 30px , $clr: $secondery_color);
+                    }
+                }
+                .student_img{
+                    width: 20%;
+                    border: 1px solid $secondery_color;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 80%;
+                        padding: 2px;
+                    }
+                    input{
+                        border-top: 1px solid $secondery_color;
+                        width: 100%;
+                    }
+                }
+            }
+            .fast_hostel{
+                margin-top: 40px;
+                border-top: 3px double $secondery_color;
+                padding-top: 20px;
+            }
+            .sec_hostel{
+                margin-top: 40px;
+                border-top: 2px dotted $secondery_color;
+                padding-top: 20px;
+            }
+            .form_line{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                .form_item{
+                    width: 48%;
+                }
+                .address{
+                    display: flex;
+                    flex-direction: column;
+                    textarea{
+                        padding: 10px;
+                    }
+                }
+            }
+            .form_button{
+                justify-content: space-around;
+                button{
+                    @include  btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 30% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px );
+                }
+            }
+        }
+    }
+}
