@@ -82,6 +82,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -3414,4 +3418,164 @@ nav .main_menu .log_sign a:hover::after {
 }
 #notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dwnld a:hover {
   transform: rotate(360deg);
+}
+
+#contact {
+  padding: 100px 0;
+}
+#contact .cntc_head h1 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #052E59;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  position: relative;
+}
+#contact .cntc_head h1::after {
+  content: "";
+  height: 3px;
+  width: 70%;
+  background-color: #052E59;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#contact .main_cntc {
+  margin-top: 50px;
+}
+#contact .main_cntc .cntc_bx {
+  padding: 10px;
+  border: 5px solid #052E59;
+}
+#contact .main_cntc .cntc_bx .nav {
+  padding: 10px;
+  border: 3px double #052E59;
+  gap: 20px;
+}
+#contact .main_cntc .cntc_bx .nav button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  border: 2px solid #052E59;
+  border-radius: 15px 0;
+  text-transform: capitalize;
+}
+#contact .main_cntc .cntc_bx .nav button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#contact .main_cntc .cntc_bx .nav button:hover {
+  color: white;
+}
+#contact .main_cntc .cntc_bx .nav button:hover::after {
+  width: 100%;
+}
+#contact .main_cntc .cntc_bx .nav .active {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #052E59;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#contact .main_cntc .cntc_bx .nav .active::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#contact .main_cntc .cntc_bx .nav .active:hover {
+  color: white;
+}
+#contact .main_cntc .cntc_bx .nav .active:hover::after {
+  width: 100%;
+}
+#contact .main_cntc .cntc_bx .tab-content {
+  width: 100%;
+  padding: 10px;
+  border: 3px double #052E59;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane .cntc_title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  text-transform: capitalize;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul li a {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul li a:hover i {
+  transform: rotate(360deg);
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul li a i {
+  transition: 0.7s;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul li .whatsapp {
+  text-decoration: underline;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul li .qrcode {
+  display: flex;
+  flex-direction: column;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul li .qrcode img {
+  width: 30%;
+  margin: 0 auto;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul li .qrcode i {
+  transition: 0s;
+}
+#contact .main_cntc .cntc_bx .tab-content .tab-pane ul .mapview {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

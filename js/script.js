@@ -19,7 +19,7 @@ console.log(this.window.scrollY);
 
 const type = document.querySelector('.type-text');
 
-let listTexts = ['Divine School , Jadurchar'];
+let listTexts = ['Divine University'];
 
 let index = -1;
 let current = 0;

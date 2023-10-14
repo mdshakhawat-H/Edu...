@@ -1,0 +1,92 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#contact{
+    padding: 100px 0;
+    .cntc_head{
+        h1{
+            @include  head ($ff: $primary_sont , $fw: 700 , $fs: 48px , $clr: $secondery_color );
+            text-transform: capitalize;
+            width: fit-content;
+            margin: 0 auto;
+            padding-bottom: 5px;
+            position: relative;
+            &::after{
+                content: '';
+                height: 3px;
+                width: 70%;
+                background-color: $secondery_color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .main_cntc{
+        margin-top: 50px;
+        .cntc_bx{
+            padding: 10px ;
+            border: 5px solid $secondery_color;
+            .nav{
+                padding: 10px ;
+                border: 3px double $secondery_color;
+                gap: 20px;
+                button{
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 100% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px );
+                    border: 2px solid $secondery_color;
+                    border-radius: 15px 0;
+                    text-transform: capitalize;
+                }
+                .active{
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color , $width: 100% , $wth: 5% , $bg: $secondery_color , $ptb: 5px , $plr: 50px );
+
+                }
+            }
+            .tab-content{
+                width: 100%;
+                padding: 10px ;
+                border: 3px double $secondery_color;
+                .tab-pane{
+                    .cntc_title{
+                        @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                        text-transform: capitalize;
+                    }
+                    ul{
+                        margin-top: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        li{
+                            a{
+                                @include discription ($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color);
+                                &:hover i{
+                                    transform: rotate(360deg);
+                                }
+                                i{
+                                    transition: .7s;
+                                }
+                            }
+                            .whatsapp{
+                                text-decoration: underline;
+                            }
+                            .qrcode{
+                                display: flex;
+                                flex-direction: column;
+                                img{
+                                    width: 30%;
+                                    margin: 0 auto;
+                                }
+                                i{
+                                    transition: 0s;
+                                }
+                            }
+                        }
+                        .mapview{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
