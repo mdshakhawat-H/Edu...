@@ -2508,6 +2508,63 @@
     }
 }
 /* =================== HOSTEL PAGE REPONSIVE ENDED =================== */
+/* =================== NOTICE PAGE REPONSIVE START =================== */
+@media (max-width: 575.98px){
+    #notice {
+        padding: 40px 0;
+    }
+    #notice .notice_head h1 {
+        font-weight: 500;
+        font-size: 24px;
+        padding-bottom: 2px;
+    }
+    #notice .notice_head h1::after {
+        height: 1px;
+    }
+    #notice .main_notice {
+        margin-top: 20px;
+    }
+    #notice .main_notice .notice_box {
+        padding: 5px;
+        border: 1px solid #052E59;
+    }
+    #notice .main_notice .notice_box .nav {
+        padding: 5px;
+        border: 1px double #052E59;
+        gap: 5px;
+        margin-right: 5px !important;
+    }
+    #notice .main_notice .notice_box .nav button , #notice .main_notice .notice_box .nav .active {
+        font-size: 12px;
+        width: 40%;
+        padding-left: 5px;
+        padding-right: 25px;
+        border: 1px double #052E59;
+        border-radius: 12px 0;
+    }
+    #notice .main_notice .notice_box .tab-content {
+        padding: 5px;
+        border: 1px double #052E59;
+    }
+    #notice .main_notice .notice_box .tab-content .ntc_bx form {
+        gap: 5px;
+    }
+    #notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm {
+        padding: 5px;
+    }
+    #notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dtls label , #notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dtls input {
+        font-size: 10px;
+    }
+    #notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dwnld a {
+        padding: 3px;
+        font-size: 10px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){}
+@media (min-width: 768px) and (max-width: 991.98px){}
+@media (min-width: 992px) and (max-width: 1199.98px){}
+@media (min-width: 1200px) {  }
+/* =================== NOTICE PAGE REPONSIVE ENDED =================== */
 @media (max-width: 575.98px){}
 @media (min-width: 576px) and (max-width: 767.98px){}
 @media (min-width: 768px) and (max-width: 991.98px){}

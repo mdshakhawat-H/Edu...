@@ -3407,6 +3407,7 @@ nav .main_menu .log_sign a:hover::after {
   align-items: center;
 }
 #notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dwnld a {
+  padding: 10px;
   color: #052E59;
   font-size: 30px;
   transition: 1s;
