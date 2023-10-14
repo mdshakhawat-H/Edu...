@@ -2401,8 +2401,115 @@
 @media (min-width: 992px) and (max-width: 1199.98px){}
 @media (min-width: 1200px) {  }
 /* =================== PROFILE PAGE REPONSIVE ENDED =================== */
+/* =================== HOSTEL PAGE REPONSIVE START =================== */
+@media (max-width: 575.98px){
+    #hostel {
+        padding: 40px 0;
+    }
+    #hostel .hostel_head h2 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    #hostel .hostel_form {
+        margin-top: 15px;
+    }
+    #hostel .hostel_form form .form_head .form_head_text h3 a {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    #hostel .hostel_form form .form_head .form_head_text p ,#hostel .hostel_form form .form_line .form_item select ,  #hostel .hostel_form form .form_line .form_item label , #hostel .hostel_form form .form_line .form_item input{
+        font-size: 10px;
+    }
+    #hostel .hostel_form form .form_head .form_head_text span {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    #hostel .hostel_form form .form_head .student_img input {
+        font-size: 6px;
+    }
+    #hostel .hostel_form form .fast_hostel {
+        margin-top: 10px;
+        border-top: 2px double #052E59;
+        padding-top: 10px;
+    }
+    #hostel .hostel_form form .form_line {
+        display: block;
+        margin-bottom: 0;
+    }
+    #hostel .hostel_form form .form_line .form_item {
+        width: 100%;
+    }
+    #hostel .hostel_form form .form_button{
+        display: flex;
+        justify-content: space-between;
+    }
+    #hostel .hostel_form form .form_button button {
+        font-size: 10px;
+        width: 43%;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+   
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #hostel {
+        padding: 55px 0;
+    }
+    #hostel .hostel_head h2 {
+        font-size: 25px;
+    }
+    #hostel .hostel_form form .form_head .form_head_text h3 a {
+        font-weight: 600;
+        font-size: 23px;
+    }
+    #hostel .hostel_form form .form_head .form_head_text p {
+        font-size: 13px;
+    }
+    #hostel .hostel_form form .form_head .form_head_text span {
+        font-size: 18px;
+    }
+    #hostel .hostel_form form .form_head .student_img input {
+        font-size: 12px;
+    }
+    #hostel .hostel_form form .fast_hostel {
+        margin-top: 20px;
+        border-top: 2px double #052E59;
+    }
+    #hostel .hostel_form form .form_line .form_item label , #hostel .hostel_form form .form_line .form_item input , #hostel .hostel_form form .form_line .form_item select{
+        font-size: 12px;
+    }
+    #hostel .hostel_form form .form_button button {
+        font-size: 14px;
+        width: 30%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #hostel {
+        padding: 70px 0;
+    }
+    #hostel .hostel_form form .form_head .form_head_text h3 a {
+        font-size: 40px;
+    }
+    #hostel .hostel_form form .form_head .form_head_text p {
+        font-size: 18px;
+    }
+    #hostel .hostel_form form .form_head .form_head_text span {
+        font-size: 25px;
+    }
+    #hostel .hostel_form form .form_head .student_img input {
+        font-size: 14px;
+    }
+    #hostel .hostel_form form .form_button button {
+        font-size: 18px;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+}
+/* =================== HOSTEL PAGE REPONSIVE ENDED =================== */
 @media (max-width: 575.98px){}
-@media (min-width: 576px) and (max-width: 767.98px) {}
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px){}
+@media (min-width: 768px) and (max-width: 991.98px){}
 @media (min-width: 992px) and (max-width: 1199.98px){}
 @media (min-width: 1200px) {  }

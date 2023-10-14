@@ -1,0 +1,84 @@
+@import "../mixins/mixin";
+@import "../variables/variable";
+#notice{
+    padding: 100px 0;
+    .notice_head{
+        h1{
+            @include head ($ff: $primary_sont , $fw: 700 , $fs: 48px , $clr: $secondery_color );
+            text-transform: capitalize;
+            width: fit-content;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 50%;
+                height: 3px;
+                background-color: $secondery_color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .main_notice{
+        margin-top: 50px;
+        .notice_box{
+            padding: 10px;
+            border: 5px solid $secondery_color;
+            .nav{
+                padding: 10px;
+                border: 2px double $secondery_color;
+                gap: 15px;
+                button{
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 100% , $wth: 5% , $bg: transparent , $ptb: 5px , $plr: 50px );
+                    border: 3px double $secondery_color;
+                    border-radius: 12px 0;
+                }
+                .active{
+                    @include btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $primary_color , $width: 100% , $wth: 100% , $bg: $secondery_color , $ptb: 5px , $plr: 50px );   
+                }
+            }
+            .tab-content{
+                width: 100%;
+                padding: 10px;
+                border: 2px double $secondery_color;
+                .ntc_bx{
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        .ntc_itm{
+                            padding: 15px;
+                            display: flex;
+                            justify-content: space-between;
+                            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            .file_dtls{
+                                display: flex;
+                                flex-direction: column;
+                                label{
+                                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 20px , $clr: $secondery_color);
+                                }
+                                input{
+                                    @include discription ($ff: $secondery_font , $fw: 400 , $fs: 20px , $clr: $secondery_color);
+                                }
+                            }
+                            .file_dwnld{
+                                display: flex;
+                                align-items: center;
+                                a{
+                                    color: $secondery_color;
+                                    font-size: 30px;
+                                    transition: 1s;
+                                    &:hover{
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

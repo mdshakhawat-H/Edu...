@@ -78,6 +78,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -3254,4 +3258,159 @@ nav .main_menu .log_sign a:hover::after {
 }
 #hostel .hostel_form form .form_button button:hover::after {
   width: 100%;
+}
+
+#notice {
+  padding: 100px 0;
+}
+#notice .notice_head h1 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #052E59;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+}
+#notice .notice_head h1::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: #052E59;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#notice .main_notice {
+  margin-top: 50px;
+}
+#notice .main_notice .notice_box {
+  padding: 10px;
+  border: 5px solid #052E59;
+}
+#notice .main_notice .notice_box .nav {
+  padding: 10px;
+  border: 2px double #052E59;
+  gap: 15px;
+}
+#notice .main_notice .notice_box .nav button {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #052E59;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+  border: 3px double #052E59;
+  border-radius: 12px 0;
+}
+#notice .main_notice .notice_box .nav button::after {
+  content: "";
+  height: 100%;
+  width: 5%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#notice .main_notice .notice_box .nav button:hover {
+  color: white;
+}
+#notice .main_notice .notice_box .nav button:hover::after {
+  width: 100%;
+}
+#notice .main_notice .notice_box .nav .active {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #052E59;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: 0.4s;
+}
+#notice .main_notice .notice_box .nav .active::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #052E59;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 0.4s;
+}
+#notice .main_notice .notice_box .nav .active:hover {
+  color: white;
+}
+#notice .main_notice .notice_box .nav .active:hover::after {
+  width: 100%;
+}
+#notice .main_notice .notice_box .tab-content {
+  width: 100%;
+  padding: 10px;
+  border: 2px double #052E59;
+}
+#notice .main_notice .notice_box .tab-content .ntc_bx form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dtls {
+  display: flex;
+  flex-direction: column;
+}
+#notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dtls label {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #052E59;
+}
+#notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dtls input {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #052E59;
+}
+#notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dwnld {
+  display: flex;
+  align-items: center;
+}
+#notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dwnld a {
+  color: #052E59;
+  font-size: 30px;
+  transition: 1s;
+}
+#notice .main_notice .notice_box .tab-content .ntc_bx form .ntc_itm .file_dwnld a:hover {
+  transform: rotate(360deg);
 }/*# sourceMappingURL=style.css.map */
