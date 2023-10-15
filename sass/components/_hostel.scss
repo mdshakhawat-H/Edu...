@@ -6,6 +6,20 @@
         text-align: center;
         h2{
             @include  head ($ff: $primary_sont , $fw: 700 , $fs: 40px , $clr: $secondery_color );
+            width: fit-content;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 60%;
+                height: 3px;
+                background-color: $secondery_color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
         }
     }
     .hostel_form{

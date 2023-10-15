@@ -2415,6 +2415,10 @@
     #hostel .hostel_head h2 {
         font-weight: 500;
         font-size: 20px;
+        padding-bottom: 1px;
+    }
+    #hostel .hostel_head h2::after {
+        height: 1px;
     }
     #hostel .hostel_form {
         margin-top: 15px;
@@ -2463,6 +2467,10 @@
     }
     #hostel .hostel_head h2 {
         font-size: 25px;
+        padding-bottom: 2px;
+    }
+    #hostel .hostel_head h2::after {
+        height: 2px;
     }
     #hostel .hostel_form form .form_head .form_head_text h3 a {
         font-weight: 600;
