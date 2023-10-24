@@ -106,7 +106,7 @@ ul, ol, li, p, h1, h2, h3, h4 {
 
 header {
   padding: 20px 0;
-  background-color: #C99789;
+  background-color: #AFAFAF;
 }
 header .main_head {
   display: flex;
@@ -258,7 +258,7 @@ nav .main_menu ul .dropdown ul {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   padding: 10px;
   width: -moz-max-content;
   width: max-content;
@@ -401,7 +401,7 @@ nav .main_menu .log_sign a:hover::after {
   color: #052E59;
   margin: 50px 0;
   padding: 0 10px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   overflow: hidden;
   position: relative;
 }
@@ -470,8 +470,8 @@ nav .main_menu .log_sign a:hover::after {
 }
 #important .important_main .important_item {
   width: 15%;
-  background-color: #C99789;
-  border-left: 5px solid #C99789;
+  background-color: #AFAFAF;
+  border-left: 5px solid #AFAFAF;
   border-radius: 10px;
   transition: 0.4s;
 }
@@ -528,7 +528,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   width: 50%;
   height: 3px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -562,7 +562,7 @@ nav .main_menu .log_sign a:hover::after {
   border-color: transparent;
 }
 #welcome .welcome .welcome_txt .main_accordion .sub_accordion .accordion_head .accordion_btn:not(.collapsed) {
-  background-color: #C99789;
+  background-color: #AFAFAF;
   color: white;
 }
 #welcome .welcome .welcome_counter {
@@ -582,7 +582,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   width: 40%;
   height: 3px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -604,13 +604,13 @@ nav .main_menu .log_sign a:hover::after {
   transition: 0.4s;
 }
 #welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item:hover {
-  border-color: #C99789;
+  border-color: #AFAFAF;
 }
 #welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item:hover h3 {
-  color: #C99789;
+  color: #AFAFAF;
 }
 #welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item:hover p {
-  color: #C99789;
+  color: #AFAFAF;
 }
 #welcome .welcome .welcome_counter .main_welc_counter .counter_list .counter_item h3 {
   text-align: center;
@@ -752,7 +752,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   width: 20%;
   height: 5px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -772,7 +772,7 @@ nav .main_menu .log_sign a:hover::after {
   border-bottom-right-radius: 10px;
 }
 #recent .recent_slider .slick-arrow:hover {
-  background-color: #C99789;
+  background-color: #AFAFAF;
   color: white;
 }
 #recent .recent_slider .slick_left {
@@ -783,7 +783,7 @@ nav .main_menu .log_sign a:hover::after {
 }
 #recent .recent_slider .recent_item {
   padding: 30px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   margin: 0 20px;
 }
 #recent .recent_slider .recent_item .recent_img {
@@ -810,9 +810,9 @@ nav .main_menu .log_sign a:hover::after {
   font-size: 30px;
   padding: 20px 30px;
   border-radius: 50%;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   color: #052E59;
-  border: 3px solid #C99789;
+  border: 3px solid #AFAFAF;
   transition: 0.4s;
 }
 #recent .recent_slider .recent_item .recent_img .recent_overlay a:hover {
@@ -873,7 +873,7 @@ nav .main_menu .log_sign a:hover::after {
   color: #052E59;
 }
 #footer .foot_txt .foot_loc:hover {
-  color: #C99789;
+  color: #AFAFAF;
 }
 #footer .foot_txt .foot_loc span i {
   transition: 0.4s;
@@ -896,7 +896,7 @@ nav .main_menu .log_sign a:hover::after {
   gap: 10px;
 }
 #footer .foot_txt .foot_contact li a:hover {
-  color: #C99789;
+  color: #AFAFAF;
 }
 #footer .foot_txt .foot_contact li a span i {
   transition: 0.4s;
@@ -953,7 +953,7 @@ nav .main_menu .log_sign a:hover::after {
   transition: 0.4s;
 }
 #footer .foot_lst ul li a:hover {
-  color: #C99789;
+  color: #AFAFAF;
 }
 #footer .copyright {
   padding: 10px 0;
@@ -963,7 +963,7 @@ nav .main_menu .log_sign a:hover::after {
   font-family: "Exo 2", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  color: #C99789;
+  color: #AFAFAF;
   text-transform: capitalize;
   text-align: center;
 }
@@ -989,7 +989,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   width: 50%;
   height: 4px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1032,7 +1032,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   width: 50%;
   height: 4px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1247,7 +1247,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   width: 40%;
   height: 3px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1411,7 +1411,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   width: 50%;
   height: 4px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1481,7 +1481,7 @@ nav .main_menu .log_sign a:hover::after {
   padding-right: 10px;
 }
 #payment .pay form .method ul li .active {
-  background-color: #C99789;
+  background-color: #AFAFAF;
 }
 #payment .pay form .method .tab-content .bkash_tab span {
   margin-top: 50px;
@@ -1570,7 +1570,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   width: 50%;
   height: 4px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1599,7 +1599,7 @@ nav .main_menu .log_sign a:hover::after {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
 }
 #scholarship .scholar_form form .form_head {
   display: flex;
@@ -1716,7 +1716,7 @@ nav .main_menu .log_sign a:hover::after {
   content: "";
   height: 3px;
   width: 50%;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1892,7 +1892,7 @@ nav .main_menu .log_sign a:hover::after {
   width: 75%;
   margin: 0 auto;
   padding: 20px 40px;
-  border: 2px solid #C99789;
+  border: 2px solid #AFAFAF;
 }
 #result .main_result .tab-content .indi_result .indi_main .indi_form form .indi_form_item {
   display: flex;
@@ -1987,7 +1987,7 @@ nav .main_menu .log_sign a:hover::after {
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
   font-size: 35px;
-  color: #C99789;
+  color: #AFAFAF;
   text-transform: capitalize;
 }
 #messege .principal_contct ul {
@@ -2060,7 +2060,7 @@ nav .main_menu .log_sign a:hover::after {
   text-transform: capitalize;
 }
 #admissioninfo .info nav .nav .active {
-  background-color: #C99789;
+  background-color: #AFAFAF;
 }
 #admissioninfo .info #nav-tabContent {
   border: 4px solid rgba(0, 0, 0, 0.3215686275);
@@ -2415,7 +2415,7 @@ nav .main_menu .log_sign a:hover::after {
 }
 #login .login_form .tab-content .tab-pane form .signwith .signwith_icon button:hover {
   transform: rotate(360deg);
-  background-color: #C99789;
+  background-color: #AFAFAF;
 }
 #login .login_form .tab-content .tab-pane form .or {
   font-family: "Exo 2", sans-serif;
@@ -2432,7 +2432,7 @@ nav .main_menu .log_sign a:hover::after {
   border: 2px solid;
   border-color: #052E59;
   width: 100%;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   font-family: "Exo 2", sans-serif;
 }
 #login .login_form .tab-content .tab-pane form .sname_box label {
@@ -2440,7 +2440,7 @@ nav .main_menu .log_sign a:hover::after {
   font-weight: 400;
   font-size: 22px;
   color: #651E3E;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   text-transform: capitalize;
   position: absolute;
   top: 5px;
@@ -2452,7 +2452,7 @@ nav .main_menu .log_sign a:hover::after {
   left: 25px;
   color: white;
   font-size: 18px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   padding: 0 5px;
 }
 #login .login_form .tab-content .tab-pane form .Remember_forget {
@@ -2849,7 +2849,7 @@ nav .main_menu .log_sign a:hover::after {
 #profile .main_profile .tab-content .tab-pane .profile .pro_main .perform .perform_item .mplt_mdl_cls .progress_bar {
   width: 90%;
   height: 15px;
-  background-color: #C99789;
+  background-color: #AFAFAF;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
