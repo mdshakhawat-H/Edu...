@@ -121,6 +121,13 @@
                         }
                     }
                 }
+                .btn{
+                    span{
+                        button{
+                            @include  btnani($ff: $secondery_font , $fw: 400 , $fs: 22px , $clr: $secondery_color , $width: 50% , $wth: 5% , $bg: $primary_color , $ptb: 5px , $plr: 50px );
+                        }
+                    }
+                }
             }
         }
     }
